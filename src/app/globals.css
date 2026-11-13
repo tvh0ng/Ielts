@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque Variable", "Be Vietnam Pro", ui-sans-serif, sans-serif;
+  --color-brand-50: #eaf6f2;
+  --color-brand-100: #cdeae1;
+  --color-brand-200: #9dd5c4;
+  --color-brand-300: #63b9a0;
+  --color-brand-400: #34a083;
+  --color-brand-500: #1f8a70;
+  --color-brand-600: #16735d;
+  --color-brand-700: #136655;
+  --color-brand-800: #0f4b3f;
+  --color-brand-900: #0b3830;
+  --color-accent-400: #e0a040;
+  --color-accent-500: #bd7b1e;
+  --color-accent-600: #9a6212;
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-page: var(--page);
+}
+
+:root {
+  --page: #f4f7f6;
+  --surface: #ffffff;
+  --surface-2: #eef3f1;
+  --ink: #13303a;
+  --muted: #557079;
+  --line: #dce5e1;
+  color-scheme: light;
+}
+.dark {
+  --page: #0c1719;
+  --surface: #132326;
+  --surface-2: #1a2f33;
+  --ink: #e6efec;
+  --muted: #94aeb0;
+  --line: #24393d;
+  color-scheme: dark;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--page); color: var(--ink); -webkit-font-smoothing: antialiased; }
+::selection { background: color-mix(in oklab, var(--color-brand-400) 35%, transparent); }
+
+@utility container-x { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
+@utility card { @apply rounded-2xl border border-line bg-surface shadow-[0_1px_2px_rgba(19,48,58,.05),0_8px_24px_-16px_rgba(19,48,58,.25)]; }
+@utility btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition active:scale-[.98] disabled:opacity-50 disabled:pointer-events-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500; }
+@utility btn-primary { @apply btn bg-brand-500 text-white hover:bg-brand-600 shadow-[0_4px_0_0_var(--color-brand-700)] active:shadow-none active:translate-y-[2px]; }
+@utility btn-accent { @apply btn bg-accent-500 text-white hover:bg-accent-600 shadow-[0_4px_0_0_var(--color-accent-600)] active:shadow-none active:translate-y-[2px]; }
+@utility btn-ghost { @apply btn border border-line bg-surface text-ink hover:bg-surface-2; }
+@utility chip { @apply inline-flex items-center gap-1 rounded-full border border-line bg-surface px-3 py-1 text-xs font-semibold text-muted; }
+@utility chip-on { @apply border-brand-500 bg-brand-500 text-white; }
+@utility input { @apply w-full rounded-xl border border-line bg-surface px-3.5 py-2.5 text-sm text-ink placeholder:text-muted focus:outline-2 focus:outline-brand-500; }
+@utility title-display { @apply font-display font-extrabold tracking-tight; }
+@utility eyebrow { @apply text-xs font-bold uppercase tracking-[.14em] text-brand-600 dark:text-brand-300; }
+
+/* Nội dung HTML từ thư viện tài liệu */
+.prose-note { @apply text-[15px] leading-7; }
+.prose-note p { @apply my-3; }
+.prose-note h3, .prose-note h4 { @apply mt-6 mb-2 font-display font-bold text-lg; }
+.prose-note ul, .prose-note ol { @apply my-3 pl-6; }
+.prose-note ul { @apply list-disc; }
+.prose-note ol { @apply list-decimal; }
+.prose-note li { @apply my-1; }
+.prose-note b, .prose-note strong { @apply font-semibold text-ink; }
+.prose-note table { @apply my-4 w-full border-collapse text-sm block overflow-x-auto; }
+.prose-note th, .prose-note td { @apply border border-line px-3 py-2 text-left align-top; }
+.prose-note th { @apply bg-surface-2 font-semibold; }
+.prose-note .tip, .prose-note blockquote { @apply my-4 rounded-xl border-l-4 border-accent-500 bg-surface-2 px-4 py-3; }
+.prose-note code { @apply rounded bg-surface-2 px-1.5 py-0.5 text-[13px]; }
+
+.flip { perspective: 1200px; }
+.flip-inner { transition: transform .5s cubic-bezier(.2,.7,.2,1); transform-style: preserve-3d; }
+.flip.on .flip-inner { transform: rotateY(180deg); }
+.flip-face { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.flip-back { transform: rotateY(180deg); }
+@media (prefers-reduced-motion: reduce) { .flip-inner { transition: none; } html { scroll-behavior: auto; } }
+.prose-note .tpl { @apply my-4 whitespace-pre-wrap rounded-xl border border-dashed border-brand-300 bg-brand-50/60 px-4 py-3 font-mono text-[13px] leading-6 dark:bg-brand-900/20 dark:border-brand-800; }
