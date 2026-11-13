@@ -5,6 +5,7 @@ import { useStore } from "@/lib/storage";
 import type { SrsMap } from "@/lib/srs";
 import { streakOf, type Activity } from "@/lib/progress";
 import { RecentActivity } from "./RecentActivity";
+import { ResultsStats } from "./ResultsStats";
 
 const PREFIX = "im2:";
 export function ProgressCenter() {
@@ -45,6 +46,7 @@ export function ProgressCenter() {
       <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
         {stats.map(([l, v]) => <div key={l as string} className="card p-4"><p className="title-display text-3xl tabular-nums">{ok ? v : "–"}</p><p className="mt-1 text-xs text-muted">{l}</p></div>)}
       </div>
+      <ResultsStats />
       <RecentActivity title="Hoạt động gần đây" limit={9} />
       <section className="card p-6">
         <h2 className="title-display text-xl">Sao lưu & chuyển máy</h2>

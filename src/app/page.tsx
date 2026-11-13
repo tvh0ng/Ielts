@@ -10,6 +10,8 @@ import { JsonLd } from "@/components/ui";
 import { cards, roadmap, stageSlug, topics } from "@/lib/data";
 import { dictations, samples, tests } from "@/lib/content";
 import { SITE } from "@/lib/site";
+import { posts } from "@/lib/blog";
+import { PostCard } from "@/components/PostCard";
 
 const FAQ: [string, string][] = [
   ["IELTS Master có miễn phí không?", "Có. Đề thi online, chép chính tả, 1.100+ collocation, bài mẫu, lộ trình và công cụ tính điểm đều miễn phí. Tiến độ lưu ngay trên trình duyệt, không cần đăng ký."],
@@ -108,7 +110,7 @@ export default function Home() {
       <div className="container-x mt-12"><Dashboard stages={stages} /></div>
 
       <Row title="IELTS Online Test" href="/de-thi">
-        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{tests.map((t) => <li key={t.slug}><TestCard t={t} /></li>)}</ul>
+        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{tests.slice(0, 6).map((t) => <li key={t.slug}><TestCard t={t} /></li>)}</ul>
       </Row>
 
       <Row title="Luyện nghe chép chính tả" href="/chep-chinh-ta">
@@ -129,6 +131,10 @@ export default function Home() {
 
       <Row title="Bài mẫu Writing band 8.0+" href="/bai-mau">
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">{samples.map((s) => <li key={s.slug}><SampleCard s={s} /></li>)}</ul>
+      </Row>
+
+      <Row title="Kinh nghiệm tự học" href="/blog">
+        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">{posts.slice(0, 4).map((p) => <li key={p.slug}><PostCard p={p} /></li>)}</ul>
       </Row>
 
       <Row title="Lộ trình 0 → 9.0" href="/lo-trinh">

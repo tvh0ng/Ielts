@@ -8,13 +8,13 @@ import { Logo } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
 import { StreakBadge } from "./StreakBadge";
 import { Drawer } from "./Drawer";
-import { SearchPalette, type SearchEntry } from "./SearchPalette";
+import { SearchPalette } from "./SearchPalette";
 import { useStore } from "@/lib/storage";
 import { cn } from "@/lib/cn";
 
 const ANNOUNCE_ID = "v2-launch";
 
-export function Header({ index, topicName }: { index: SearchEntry[]; topicName: Record<string, string> }) {
+export function Header() {
   const path = usePathname();
   const [drawer, setDrawer] = useState(false);
   const [search, setSearch] = useState(false);
@@ -42,6 +42,7 @@ export function Header({ index, topicName }: { index: SearchEntry[]; topicName: 
             </button>
             <StreakBadge />
             <ThemeToggle />
+            <Link href="/nang-cap" className="hidden whitespace-nowrap rounded-xl px-3 py-2 text-sm font-semibold text-accent-600 hover:bg-accent-400/10 2xl:inline-flex dark:text-accent-400">Nâng cấp Pro</Link>
             <Link href="/tu-vung/on-tap" className="btn-primary hidden whitespace-nowrap sm:inline-flex">Học ngay</Link>
           </div>
         </div>
@@ -58,7 +59,7 @@ export function Header({ index, topicName }: { index: SearchEntry[]; topicName: 
       )}
 
       <Drawer open={drawer} onClose={closeDrawer} />
-      <SearchPalette open={search} onClose={() => setSearch(false)} index={index} topicName={topicName} />
+      <SearchPalette open={search} onClose={() => setSearch(false)} />
       <MobileNav path={path} onMenu={() => setDrawer(true)} />
       <BackToTop />
     </>

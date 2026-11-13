@@ -5,18 +5,23 @@ import { CornerDownLeft, Search } from "lucide-react";
 import type { Card } from "@/lib/types";
 import { cn } from "@/lib/cn";
 
-export interface SearchEntry { t: string; s: string; href: string; k: string }
+import type { SearchEntry } from "@/lib/search-index";
 const strip = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d");
 let cardsCache: Card[] | null = null;
+let idxCache: { index: SearchEntry[]; topicName: Record<string, string> } | null = null;
 
-export function SearchPalette({ open, onClose, index, topicName }: { open: boolean; onClose: () => void; index: SearchEntry[]; topicName: Record<string, string> }) {
+export function SearchPalette({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const [idx, setIdx] = useState(idxCache);
+  const index = idx?.index || [];
+  const topicName = idx?.topicName || {};
   const [q, setQ] = useState("");
   const [cards, setCards] = useState<Card[] | null>(cardsCache);
   const [sel, setSel] = useState(0);
   const input = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
-  useEffect(() => { if (open) { setQ(""); setSel(0); setTimeout(() => input.current?.focus(), 30); if (!cardsCache) fetch("/data/cards.json").then((r) => r.json()).then((c) => { cardsCache = c; setCards(c); }); } }, [open]);
+  useEffect(() => { if (open) { setQ(""); setSel(0); setTimeout(() => input.current?.focus(), 30); if (!idxCache) fetch("/search-index.json").then((r) => r.json()).then((d) => { idxCache = d; setIdx(d); });
+      if (!cardsCache) fetch("/data/cards.json").then((r) => r.json()).then((c) => { cardsCache = c; setCards(c); }); } }, [open]);
 
   const results = useMemo(() => {
     const n = strip(q.trim()); if (!n) return index.filter((x) => x.k === "Trang").slice(0, 8);
@@ -24,7 +29,7 @@ export function SearchPalette({ open, onClose, index, topicName }: { open: boole
     const words = (cards || []).filter((c) => strip(c.c + " " + c.m).includes(n)).slice(0, 8)
       .map((c) => ({ t: c.c, s: `${c.m} · ${topicName[c.t]}`, href: `/tu-vung/${c.t}`, k: "Từ vựng" }));
     return [...pages, ...words];
-  }, [q, cards, index, topicName]);
+  }, [q, cards, idx]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!open) return null;
   const go = (href: string) => { onClose(); router.push(href); };

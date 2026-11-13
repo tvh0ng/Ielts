@@ -19,6 +19,12 @@ Bản trước là một file `index.html` 466 KB; bản này tách dữ liệu 
 | Bài tập | `/luyen-tap/[bài]` | TFNG, Matching headings, Sentence completion, Listening form |
 | Tính điểm | `/tinh-diem` | Quy đổi số câu → band, làm tròn Overall đúng quy tắc, mô tả band |
 | Tài liệu | `/tai-lieu/[slug]` | 7 bộ ghi chú |
+| Đề thi online | `/de-thi`, `/de-thi/[slug]` | 6 đề Reading/Listening; chế độ Luyện tập (chọn phần, chọn giờ) hoặc Full test; tô sáng & lưu từ thành flashcard; giải thích đáp án |
+| Chép chính tả | `/chep-chinh-ta/[slug]` | 14 bài, chấm từng từ, gợi ý, nghe chậm, bản dịch |
+| Bài mẫu | `/bai-mau`, `/bai-mau/speaking` | Writing band 8.0 có dàn ý + từ vựng; 46 câu mẫu Speaking |
+| Kết quả & tiến độ | `/tien-do` | Band TB theo kỹ năng, độ chính xác theo dạng câu hỏi, lịch sử làm đề, sao lưu/khôi phục |
+| Blog | `/blog/[slug]` | Bài viết SEO, JSON-LD BlogPosting |
+| Bảng giá | `/nang-cap` | Cấu hình ở `src/lib/plans.ts`; nút thanh toán dùng `NEXT_PUBLIC_CHECKOUT_URL` hoặc `NEXT_PUBLIC_CONTACT_EMAIL` |
 
 Khác: dark mode, giao diện mobile có thanh điều hướng dưới (kiểu app), cài được như PWA (manifest), `sitemap.xml`, `robots.txt`, ảnh Open Graph, JSON-LD (FAQ, Breadcrumb, DefinedTermSet), font tự host (không phụ thuộc Google Fonts), header bảo mật.
 
@@ -45,6 +51,7 @@ npm run build && npm start   # bản production
    - `NEXT_PUBLIC_SITE_URL` = domain thật (vd. `https://ieltsmaster.vn`)
    - `ANTHROPIC_API_KEY` = khoá API (bật chấm AI; không có thì app dùng chấm nhanh offline)
    - tuỳ chọn `ANTHROPIC_MODEL`, `AI_RATE_LIMIT_PER_HOUR`
+   - `NEXT_PUBLIC_CHECKOUT_URL` (link thanh toán, vd. PayOS/Stripe Payment Link) hoặc `NEXT_PUBLIC_CONTACT_EMAIL`
 4. **Settings → Domains** để gắn tên miền riêng, rồi gửi `https://<domain>/sitemap.xml` lên Google Search Console.
 
 Cũng chạy được trên Netlify, Railway, Render, Docker (`npm run build && npm start`). GitHub Pages **không** chạy được route `/api/ai` (chỉ host file tĩnh).
@@ -61,6 +68,12 @@ public/data/cards.json   # bộ thẻ tải lười cho phiên ôn tập
 ```
 
 Sửa/thêm nội dung chỉ cần chỉnh file JSON trong `src/data/` (nhớ chép `cards.json` sang `public/data/`).
+
+## Thêm nội dung
+
+- Đề thi: thêm object vào `src/data/tests.json` (dạng câu: `tfng`, `mcq`, `gap`; chỗ trống viết `___`).
+- Chép chính tả: `src/data/dictation.json` (mỗi dòng `[câu tiếng Anh, bản dịch]`).
+- Bài mẫu: `src/data/samples.json` · Blog: `src/data/blog.json` (HTML đơn giản).
 
 ## Hướng phát triển thương mại
 

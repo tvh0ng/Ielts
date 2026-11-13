@@ -5,7 +5,7 @@ import { SITE } from "@/lib/site";
 export function PageHead({ eyebrow, title, desc, children }: { eyebrow?: string; title: string; desc?: string; children?: React.ReactNode }) {
   return (
     <div className="relative overflow-hidden border-b border-line bg-hero">
-      <svg aria-hidden className="pointer-events-none absolute -right-16 -top-20 size-80 text-accent-400/20" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" strokeWidth="8" /><circle cx="50" cy="50" r="24" fill="none" stroke="currentColor" strokeWidth="8" /></svg>
+      <svg aria-hidden className="pointer-events-none absolute -right-16 -top-20 hidden size-80 text-accent-400/20 sm:block dark:text-accent-400/10" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" strokeWidth="8" /><circle cx="50" cy="50" r="24" fill="none" stroke="currentColor" strokeWidth="8" /></svg>
       <div className="container-x relative py-10 sm:py-14">
         {eyebrow && <p className="eyebrow">{eyebrow}</p>}
         <h1 className="title-display mt-2 text-3xl sm:text-4xl md:text-5xl text-balance">{title}</h1>
