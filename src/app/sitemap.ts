@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SKILL_SLUG, notes, roadmap, stageSlug, topics } from "@/lib/data";
 import { EX_META } from "@/lib/exercises";
+import { dictations, samples, tests } from "@/lib/content";
 import { SITE } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,6 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...Object.values(SKILL_SLUG).map((s) => u(`/ky-nang/${s}`, 0.8)),
     ...topics.map((t) => u(`/tu-vung/${t.slug}`, 0.7)),
     ...Object.keys(EX_META).map((e) => u(`/luyen-tap/${e}`, 0.6)),
+    u("/de-thi", 0.9, "weekly"), u("/chep-chinh-ta", 0.9, "weekly"), u("/bai-mau", 0.9, "weekly"), u("/bai-mau/speaking", 0.7),
+    ...tests.map((t) => u(`/de-thi/${t.slug}`, 0.8)),
+    ...dictations.map((d) => u(`/chep-chinh-ta/${d.slug}`, 0.7)),
+    ...samples.map((s) => u(`/bai-mau/${s.slug}`, 0.7)),
     ...notes.map((n) => u(`/tai-lieu/${n.slug}`, 0.6)),
   ];
 }

@@ -24,12 +24,14 @@
   --color-surface-2: var(--surface-2);
   --color-line: var(--line);
   --color-page: var(--page);
+  --color-hero: var(--hero);
 }
 
 :root {
-  --page: #f4f7f6;
+  --page: #ffffff;
   --surface: #ffffff;
-  --surface-2: #eef3f1;
+  --surface-2: #f3f5f4;
+  --hero: #fbf6ee;
   --ink: #13303a;
   --muted: #557079;
   --line: #dce5e1;
@@ -37,8 +39,9 @@
 }
 .dark {
   --page: #0c1719;
-  --surface: #132326;
+  --surface: #122427;
   --surface-2: #1a2f33;
+  --hero: #10221f;
   --ink: #e6efec;
   --muted: #94aeb0;
   --line: #24393d;
@@ -50,7 +53,7 @@ body { background: var(--page); color: var(--ink); -webkit-font-smoothing: antia
 ::selection { background: color-mix(in oklab, var(--color-brand-400) 35%, transparent); }
 
 @utility container-x { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
-@utility card { @apply rounded-2xl border border-line bg-surface shadow-[0_1px_2px_rgba(19,48,58,.05),0_8px_24px_-16px_rgba(19,48,58,.25)]; }
+@utility card { @apply rounded-2xl border border-line bg-surface shadow-[0_1px_2px_rgba(19,48,58,.04)]; }
 @utility btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition active:scale-[.98] disabled:opacity-50 disabled:pointer-events-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500; }
 @utility btn-primary { @apply btn bg-brand-500 text-white hover:bg-brand-600 shadow-[0_4px_0_0_var(--color-brand-700)] active:shadow-none active:translate-y-[2px]; }
 @utility btn-accent { @apply btn bg-accent-500 text-white hover:bg-accent-600 shadow-[0_4px_0_0_var(--color-accent-600)] active:shadow-none active:translate-y-[2px]; }

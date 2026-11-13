@@ -5,6 +5,7 @@ import { Keyboard, PartyPopper, RotateCcw, Settings2, Shuffle, Volume2 } from "l
 import { useStore } from "@/lib/storage";
 import { preview, schedule, type Grade, type SrsMap } from "@/lib/srs";
 import { logActivity } from "@/lib/progress";
+import { logRecent } from "@/lib/recent";
 import { speak, type Accent } from "@/lib/tts";
 import { cn } from "@/lib/cn";
 
@@ -41,6 +42,7 @@ export function Flashcards({ cards, title, backHref = "/tu-vung", emptyText }: {
     if (!card) return;
     setSrs((m) => ({ ...m, [card.key]: schedule(m[card.key], g) }));
     logActivity();
+    logRecent({ key: `fc:${title}`, kind: "Flashcard", title: `Từ vựng: ${title}`, href: window.location.pathname, done: Math.min(total, stats.done + (g === 0 ? 0 : 1)), total });
     setStats((s) => ({ done: s.done + (g === 0 ? 0 : 1), again: s.again + (g === 0 ? 1 : 0) }));
     setQueue((q) => {
       const rest = q.slice(1);
@@ -48,7 +50,7 @@ export function Flashcards({ cards, title, backHref = "/tu-vung", emptyText }: {
       return rest;
     });
     setFlipped(false);
-  }, [card, setSrs]);
+  }, [card, setSrs, title, total, stats.done]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {

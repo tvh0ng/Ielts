@@ -1,0 +1,121 @@
+[
+  {
+    "slug": "booking-a-hotel-room",
+    "title": "Booking a hotel room",
+    "topic": "Travel & Tourism",
+    "level": "Dễ",
+    "part": "Listening Part 1",
+    "lines": [
+      ["Good afternoon, Seaview Hotel, how can I help you?", "Xin chào, khách sạn Seaview xin nghe, tôi có thể giúp gì cho anh/chị?"],
+      ["I'd like to book a double room for three nights, please.", "Tôi muốn đặt một phòng đôi trong ba đêm."],
+      ["Certainly. What date would you like to arrive?", "Vâng. Anh/chị muốn nhận phòng ngày nào ạ?"],
+      ["We're planning to arrive on the fourteenth of July.", "Chúng tôi dự định đến vào ngày 14 tháng 7."],
+      ["A room with a sea view costs ninety pounds per night.", "Phòng nhìn ra biển có giá 90 bảng mỗi đêm."],
+      ["Breakfast is included, and parking is free for guests.", "Giá đã gồm bữa sáng và khách được đỗ xe miễn phí."],
+      ["Could I have your surname and a contact number?", "Cho tôi xin họ và số điện thoại liên hệ của anh/chị?"]
+    ]
+  },
+  {
+    "slug": "joining-a-library",
+    "title": "Joining the city library",
+    "topic": "Books & Reading",
+    "level": "Dễ",
+    "part": "Listening Part 1",
+    "lines": [
+      ["Hello, I'd like to become a member of the library.", "Xin chào, tôi muốn đăng ký làm thành viên thư viện."],
+      ["Membership is free, but you need to show proof of address.", "Làm thẻ thành viên miễn phí nhưng bạn cần giấy tờ chứng minh địa chỉ."],
+      ["You can borrow up to eight books at a time.", "Bạn có thể mượn tối đa tám cuốn sách một lần."],
+      ["Most items can be kept for three weeks.", "Phần lớn tài liệu được giữ trong ba tuần."],
+      ["If you return a book late, there is a small daily fine.", "Nếu trả sách muộn, bạn sẽ bị phạt một khoản nhỏ mỗi ngày."],
+      ["The library is closed on Sundays and public holidays.", "Thư viện đóng cửa vào Chủ nhật và các ngày lễ."]
+    ]
+  },
+  {
+    "slug": "a-guided-tour-of-the-museum",
+    "title": "A guided tour of the museum",
+    "topic": "Culture & Tradition",
+    "level": "Trung bình",
+    "part": "Listening Part 2",
+    "lines": [
+      ["Welcome to the National History Museum, and thank you for joining today's tour.", "Chào mừng đến Bảo tàng Lịch sử Quốc gia, cảm ơn các bạn đã tham gia chuyến tham quan hôm nay."],
+      ["The building first opened to the public in eighteen eighty-one.", "Toà nhà lần đầu mở cửa đón công chúng vào năm 1881."],
+      ["On the ground floor, you will find our collection of ancient tools.", "Ở tầng trệt, các bạn sẽ thấy bộ sưu tập công cụ cổ đại."],
+      ["Please note that photography is not allowed in the special exhibition.", "Xin lưu ý không được chụp ảnh trong khu triển lãm đặc biệt."],
+      ["The café next to the main entrance serves light meals until four o'clock.", "Quán cà phê cạnh lối vào chính phục vụ đồ ăn nhẹ đến 4 giờ chiều."],
+      ["The tour will finish in the gift shop in about ninety minutes.", "Chuyến tham quan sẽ kết thúc ở cửa hàng quà tặng sau khoảng 90 phút."]
+    ]
+  },
+  {
+    "slug": "planning-a-group-project",
+    "title": "Planning a group project",
+    "topic": "Education",
+    "level": "Trung bình",
+    "part": "Listening Part 3",
+    "lines": [
+      ["Have you decided which topic we should choose for the presentation?", "Bạn đã quyết định nhóm mình nên chọn chủ đề nào cho bài thuyết trình chưa?"],
+      ["I think urban farming would be interesting, but the data might be limited.", "Mình nghĩ nông nghiệp đô thị sẽ thú vị, nhưng số liệu có thể bị hạn chế."],
+      ["Our tutor suggested that we focus on one city rather than several.", "Thầy hướng dẫn gợi ý nhóm nên tập trung vào một thành phố thay vì nhiều thành phố."],
+      ["Why don't you design the questionnaire while I contact the local council?", "Sao bạn không thiết kế bảng hỏi trong khi mình liên hệ chính quyền địa phương?"],
+      ["We should aim to finish the first draft by the end of next week.", "Chúng ta nên cố hoàn thành bản nháp đầu tiên trước cuối tuần sau."],
+      ["That gives us enough time to practise before the deadline.", "Như vậy chúng ta có đủ thời gian luyện tập trước hạn chót."]
+    ]
+  },
+  {
+    "slug": "the-benefits-of-sleep",
+    "title": "The benefits of sleep",
+    "topic": "Health & Fitness",
+    "level": "Khó",
+    "part": "Listening Part 4",
+    "lines": [
+      ["Today's lecture examines why sleep is essential for memory and learning.", "Bài giảng hôm nay xem xét vì sao giấc ngủ cần thiết cho trí nhớ và việc học."],
+      ["During deep sleep, the brain transfers information from short-term to long-term memory.", "Trong giấc ngủ sâu, não chuyển thông tin từ trí nhớ ngắn hạn sang dài hạn."],
+      ["Researchers found that students who slept well performed significantly better on tests.", "Các nhà nghiên cứu thấy sinh viên ngủ đủ làm bài kiểm tra tốt hơn đáng kể."],
+      ["By contrast, a lack of sleep reduces concentration and slows reaction times.", "Ngược lại, thiếu ngủ làm giảm khả năng tập trung và làm chậm phản xạ."],
+      ["Teenagers in particular tend to need between eight and ten hours each night.", "Đặc biệt, thanh thiếu niên thường cần từ tám đến mười tiếng mỗi đêm."],
+      ["Some schools have therefore experimented with later starting times.", "Vì vậy, một số trường đã thử nghiệm cho học sinh vào học muộn hơn."]
+    ]
+  },
+  {
+    "slug": "renewable-energy-in-cities",
+    "title": "Renewable energy in cities",
+    "topic": "Energy & Resources",
+    "level": "Khó",
+    "part": "Listening Part 4",
+    "lines": [
+      ["Cities currently account for roughly three quarters of global energy use.", "Các thành phố hiện chiếm khoảng ba phần tư lượng năng lượng tiêu thụ toàn cầu."],
+      ["Solar panels on rooftops have become far cheaper over the past decade.", "Tấm pin mặt trời trên mái nhà đã rẻ hơn rất nhiều trong thập kỷ qua."],
+      ["However, the main challenge is storing energy for cloudy days.", "Tuy nhiên, thách thức chính là lưu trữ năng lượng cho những ngày nhiều mây."],
+      ["Several cities are now testing large batteries connected to the local grid.", "Một số thành phố đang thử nghiệm pin cỡ lớn kết nối với lưới điện địa phương."],
+      ["Experts argue that public transport must also be electrified.", "Các chuyên gia cho rằng giao thông công cộng cũng phải được điện hoá."],
+      ["Without these changes, it will be difficult to meet climate targets.", "Nếu không có những thay đổi này, sẽ khó đạt được các mục tiêu khí hậu."]
+    ]
+  },
+  {
+    "slug": "my-hometown",
+    "title": "Talking about my hometown",
+    "topic": "Hometown & City",
+    "level": "Dễ",
+    "part": "Speaking Part 1",
+    "lines": [
+      ["I come from a small coastal town in the south of the country.", "Tôi đến từ một thị trấn ven biển nhỏ ở miền nam đất nước."],
+      ["It's famous for its fresh seafood and quiet beaches.", "Nơi đó nổi tiếng với hải sản tươi và những bãi biển yên tĩnh."],
+      ["Most people there work in fishing or tourism.", "Hầu hết người dân ở đó làm nghề đánh cá hoặc du lịch."],
+      ["Over the last few years, a lot of new hotels have been built.", "Vài năm gần đây, rất nhiều khách sạn mới đã được xây dựng."],
+      ["I miss the slow pace of life whenever I'm in the city.", "Tôi nhớ nhịp sống chậm rãi mỗi khi ở thành phố."]
+    ]
+  },
+  {
+    "slug": "working-from-home",
+    "title": "The rise of working from home",
+    "topic": "Work & Career",
+    "level": "Trung bình",
+    "part": "Speaking Part 3",
+    "lines": [
+      ["Working from home has become far more common since twenty twenty.", "Làm việc tại nhà đã phổ biến hơn rất nhiều kể từ năm 2020."],
+      ["Many employees appreciate the flexibility and the time saved on commuting.", "Nhiều nhân viên đánh giá cao sự linh hoạt và thời gian tiết kiệm được khi không phải đi lại."],
+      ["On the other hand, some people feel isolated from their colleagues.", "Mặt khác, một số người cảm thấy bị cô lập khỏi đồng nghiệp."],
+      ["Managers also worry that it is harder to build a strong team culture.", "Các quản lý cũng lo rằng khó xây dựng văn hoá đội nhóm vững mạnh hơn."],
+      ["In my view, a hybrid model offers the best of both worlds.", "Theo tôi, mô hình kết hợp mang lại ưu điểm của cả hai cách."]
+    ]
+  }
+]

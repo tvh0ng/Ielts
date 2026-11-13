@@ -1,0 +1,178 @@
+[
+  {
+    "slug": "reading-mini-test-1",
+    "title": "Reading Mini Test 1",
+    "skill": "Reading",
+    "minutes": 20,
+    "level": "5.5 → 7.0",
+    "color": "violet",
+    "sections": [
+      {
+        "title": "The return of the night train",
+        "paras": [
+          "A For much of the twentieth century, sleeper trains were a familiar way to cross Europe. Passengers boarded in the evening, slept in narrow bunks and woke up hundreds of kilometres away. By the early 2000s, however, many of these services had disappeared. Low-cost airlines offered tickets that were often cheaper than a train berth, and rail operators found that the old carriages were expensive to maintain.",
+          "B The situation began to change around 2016, when the Austrian state railway decided to take over several routes that other companies had abandoned. Rather than cutting costs further, it invested in new carriages with private cabins, improved catering and, crucially, a more modern booking system. Within three years, passenger numbers on its overnight services had grown by roughly a fifth.",
+          "C Environmental concerns are frequently cited as the main reason for this revival. A journey by rail typically produces a fraction of the carbon emissions of the same trip by air, and a growing number of travellers say this influences their choices. Yet surveys suggest that comfort and convenience matter just as much. Arriving in a city centre in the morning, without the need to travel to a distant airport or pay for a hotel, is an attractive proposition for business and leisure travellers alike.",
+          "D Not everyone is convinced that night trains can compete on a large scale. Critics point out that a sleeper carriage carries far fewer passengers than a daytime train of the same length, which makes each ticket costly to provide. Track access charges, which vary considerably between countries, add further expense, and a single international route may have to negotiate with four or five different infrastructure managers.",
+          "E Supporters argue that governments could address these problems if they wished to. Some have proposed reducing track charges for overnight services or removing the tax advantages that aviation currently enjoys. Others believe that the industry itself must innovate, for example by designing carriages that can be converted from seating in the day to beds at night. Whatever the solution, it seems likely that the sound of a train moving through the darkness will become familiar to a new generation of travellers."
+        ],
+        "groups": [
+          {
+            "type": "tfng",
+            "instruction": "Questions 1–5. Do the following statements agree with the information in the passage? Choose TRUE, FALSE or NOT GIVEN.",
+            "questions": [
+              { "q": "By the early 2000s, flying was sometimes cheaper than taking a sleeper train.", "answer": ["TRUE"], "why": "Đoạn A: low-cost airlines offered tickets that were often cheaper than a train berth." },
+              { "q": "The Austrian railway reduced spending on its overnight services after 2016.", "answer": ["FALSE"], "why": "Đoạn B: \"Rather than cutting costs further, it invested in new carriages\" — ngược lại với giảm chi tiêu." },
+              { "q": "Passenger numbers on Austrian night trains rose by about 20% within three years.", "answer": ["TRUE"], "why": "Đoạn B: \"grown by roughly a fifth\" = khoảng 20%." },
+              { "q": "Most night-train passengers are travelling for business.", "answer": ["NOT GIVEN"], "why": "Đoạn C chỉ nói hấp dẫn với cả business và leisure travellers, không nói nhóm nào đông hơn." },
+              { "q": "Track access charges are the same in every European country.", "answer": ["FALSE"], "why": "Đoạn D: charges \"vary considerably between countries\"." }
+            ]
+          },
+          {
+            "type": "mcq",
+            "instruction": "Questions 6–9. Choose the correct letter, A, B, C or D.",
+            "questions": [
+              { "q": "According to paragraph C, surveys show that travellers choose night trains", "options": ["A mainly because of environmental concerns.", "B equally for comfort, convenience and the environment.", "C because they are afraid of flying.", "D only when hotels are fully booked."], "answer": ["B"], "why": "\"comfort and convenience matter just as much\" (as environmental concerns)." },
+              { "q": "What is one advantage of night trains mentioned in paragraph C?", "options": ["A They are always cheaper than flights.", "B They offer free meals.", "C They arrive in the centre of a city.", "D They are faster than daytime trains."], "answer": ["C"], "why": "\"Arriving in a city centre in the morning\"." },
+              { "q": "Critics believe night trains are expensive to run partly because", "options": ["A the carriages carry relatively few people.", "B staff wages are very high.", "C passengers demand private cabins.", "D trains must travel slowly at night."], "answer": ["A"], "why": "\"a sleeper carriage carries far fewer passengers than a daytime train of the same length\"." },
+              { "q": "In paragraph E, the writer suggests that", "options": ["A night trains will soon replace short flights.", "B the future of night trains is uncertain.", "C night trains will probably become more common.", "D governments are unwilling to support railways."], "answer": ["C"], "why": "\"it seems likely that the sound of a train … will become familiar to a new generation\"." }
+            ]
+          },
+          {
+            "type": "gap",
+            "instruction": "Questions 10–13. Complete the sentences. Write NO MORE THAN TWO WORDS from the passage for each answer.",
+            "questions": [
+              { "q": "Old sleeper carriages were costly to ___.", "answer": ["maintain"], "why": "Đoạn A: \"the old carriages were expensive to maintain\"." },
+              { "q": "Besides new carriages and food, the Austrian operator introduced a better ___.", "answer": ["booking system", "modern booking system"], "why": "Đoạn B: \"a more modern booking system\". Giới hạn 2 từ → booking system." },
+              { "q": "Some people want to remove the ___ that airlines currently have.", "answer": ["tax advantages", "tax advantage"], "why": "Đoạn E: \"removing the tax advantages that aviation currently enjoys\"." },
+              { "q": "One idea is a carriage that changes from ___ during the day to beds at night.", "answer": ["seating"], "why": "Đoạn E: \"converted from seating in the day to beds at night\"." }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "reading-mini-test-2",
+    "title": "Reading Mini Test 2",
+    "skill": "Reading",
+    "minutes": 20,
+    "level": "5.5 → 7.0",
+    "color": "sky",
+    "sections": [
+      {
+        "title": "Urban beekeeping",
+        "paras": [
+          "Urban beekeeping has grown rapidly in many European cities over the past two decades. In London alone, the number of registered hives more than doubled within roughly five years. Supporters argue that rooftop hives help to reverse the decline in bee populations, yet some ecologists are less convinced.",
+          "They point out that honeybees compete with wild bees for the same limited supply of flowers, and that adding hives without planting more flowers may actually harm native species. Several city councils have therefore begun to encourage residents to plant pollinator-friendly gardens rather than simply install new hives.",
+          "Honey produced in cities often contains fewer pesticide residues than honey from farmland, although researchers caution that this may vary considerably from one city to another."
+        ],
+        "groups": [
+          {
+            "type": "tfng",
+            "instruction": "Questions 1–6. Choose TRUE, FALSE or NOT GIVEN.",
+            "questions": [
+              { "q": "The number of registered hives in London increased by over 100% in about five years.", "answer": ["TRUE"], "why": "\"more than doubled within roughly five years\" = tăng hơn 100%." },
+              { "q": "All ecologists believe urban beekeeping benefits wild bees.", "answer": ["FALSE"], "why": "\"some ecologists are less convinced\" → trái với \"all … believe\"." },
+              { "q": "Honeybees and wild bees feed on different flowers.", "answer": ["FALSE"], "why": "\"compete … for the same limited supply of flowers\"." },
+              { "q": "Some city councils give residents free seeds.", "answer": ["NOT GIVEN"], "why": "Bài chỉ nói \"encourage residents to plant\" — không nhắc hạt giống miễn phí." },
+              { "q": "City honey is always free from pesticide residues.", "answer": ["FALSE"], "why": "\"fewer pesticide residues\" ≠ \"free from\"; thêm nữa \"may vary\"." },
+              { "q": "Urban beekeeping is more popular in Europe than in Asia.", "answer": ["NOT GIVEN"], "why": "Bài không so sánh với châu Á." }
+            ]
+          },
+          {
+            "type": "gap",
+            "instruction": "Questions 7–9. Complete the sentences. Write NO MORE THAN TWO WORDS from the passage.",
+            "questions": [
+              { "q": "Some ecologists worry that adding hives may harm ___ species.", "answer": ["native"], "why": "\"may actually harm native species\"." },
+              { "q": "Councils encourage residents to plant ___ gardens.", "answer": ["pollinator-friendly", "pollinator friendly"], "why": "Từ có gạch nối tính là 1 từ." },
+              { "q": "Honeybees compete with wild bees for a limited supply of ___.", "answer": ["flowers"], "why": "Chú ý số nhiều: flowers." }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The four-day week",
+        "paras": [
+          "A When companies first experimented with shorter working weeks, the aim was rarely to improve wellbeing. In the 1930s, some manufacturers cut hours mainly to spread a limited amount of work among more employees during the economic depression.",
+          "B Recent trials have reported that staff who work four days often complete the same amount of work as before. Managers attribute this to fewer unnecessary meetings and a stronger focus during working hours.",
+          "C However, the model does not suit every sector. Hospitals, schools and shops must remain open on fixed days, so reducing hours there frequently requires hiring additional staff, which raises costs."
+        ],
+        "groups": [
+          {
+            "type": "mcq",
+            "instruction": "Questions 10–12. Choose the correct heading for each paragraph.",
+            "questions": [
+              { "q": "Paragraph A", "options": ["i Employees demand higher pay", "ii An idea originally driven by economic necessity", "iii Output maintained in less time", "iv Not a solution for every industry", "v Governments plan to make the policy law"], "answer": ["ii"], "why": "Cắt giờ vì \"economic depression\" → economic necessity." },
+              { "q": "Paragraph B", "options": ["i Employees demand higher pay", "ii An idea originally driven by economic necessity", "iii Output maintained in less time", "iv Not a solution for every industry", "v Governments plan to make the policy law"], "answer": ["iii"], "why": "\"complete the same amount of work\" trong 4 ngày." },
+              { "q": "Paragraph C", "options": ["i Employees demand higher pay", "ii An idea originally driven by economic necessity", "iii Output maintained in less time", "iv Not a solution for every industry", "v Governments plan to make the policy law"], "answer": ["iv"], "why": "\"does not suit every sector\"." }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "listening-mini-test-1",
+    "title": "Listening Mini Test 1",
+    "skill": "Listening",
+    "minutes": 12,
+    "level": "Nền tảng → 6.5",
+    "color": "amber",
+    "sections": [
+      {
+        "title": "Part 1 · Sports centre enrolment",
+        "script": [
+          ["A", "Good morning, Riverside Sports Centre. How can I help?"],
+          ["B", "Hi, I would like to join the adult swimming course."],
+          ["A", "Of course. Can I take your surname, please?"],
+          ["B", "Yes, it is Fletcher. F, L, E, T, C, H, E, R."],
+          ["A", "Thank you. Which evening would suit you? We have Tuesday and Thursday."],
+          ["B", "Tuesday is no good for me, I work late. So Thursday, please."],
+          ["A", "Fine. The course normally costs ninety-five pounds, but there is a discount for new members, so for you it is eighty-five."],
+          ["B", "Great. Do I need to bring anything?"],
+          ["A", "Just a towel and some goggles. We provide the swimming cap."],
+          ["B", "And how many weeks does it last?"],
+          ["A", "It was ten weeks last year, but now it runs for twelve."]
+        ],
+        "groups": [
+          {
+            "type": "gap",
+            "instruction": "Questions 1–5. Complete the form. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "questions": [
+              { "q": "Surname: ___", "answer": ["fletcher"], "why": "Đánh vần F-L-E-T-C-H-E-R." },
+              { "q": "Preferred evening: ___", "answer": ["thursday"], "why": "Bẫy: Tuesday được nhắc trước nhưng bị loại." },
+              { "q": "Course fee: £___", "answer": ["85", "eighty-five", "eighty five"], "why": "Bẫy: 95 là giá gốc; sau giảm giá còn 85." },
+              { "q": "Bring: a towel and ___", "answer": ["goggles"], "why": "Mũ bơi do trung tâm cung cấp." },
+              { "q": "Length of course: ___ weeks", "answer": ["12", "twelve"], "why": "Bẫy: \"ten weeks last year\"." }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 · Volunteering at the city park",
+        "script": [
+          ["A", "Hello everyone, and thanks for coming to this information session about volunteering at Greenfield Park."],
+          ["A", "Our volunteers meet every Saturday morning at nine, outside the visitor centre, not at the main gate as it says on our old leaflet."],
+          ["A", "Most of the work involves planting trees and clearing paths. We used to collect litter as well, but the council now employs a team to do that."],
+          ["A", "You don't need any experience. We provide gloves and tools, so all you need to bring is a bottle of water and suitable shoes."],
+          ["A", "Volunteers must be at least sixteen years old. Younger people are welcome, but only if they come with a parent."],
+          ["A", "Finally, if you'd like to register, please fill in the online form rather than phoning the office, as we are very short of staff at the moment."]
+        ],
+        "groups": [
+          {
+            "type": "mcq",
+            "instruction": "Questions 6–10. Choose the correct letter, A, B or C.",
+            "questions": [
+              { "q": "Where do volunteers meet?", "options": ["A at the main gate", "B outside the visitor centre", "C in the car park"], "answer": ["B"], "why": "Bẫy: \"not at the main gate as it says on our old leaflet\"." },
+              { "q": "What do volunteers mainly do now?", "options": ["A collect litter", "B plant trees and clear paths", "C guide visitors"], "answer": ["B"], "why": "Thu gom rác \"used to\" — giờ hội đồng thành phố làm." },
+              { "q": "What should volunteers bring?", "options": ["A gloves", "B tools", "C water"], "answer": ["C"], "why": "Găng tay và dụng cụ được cung cấp; chỉ cần mang nước và giày." },
+              { "q": "Children under sixteen", "options": ["A cannot volunteer.", "B can volunteer with a parent.", "C can volunteer on weekdays only."], "answer": ["B"], "why": "\"only if they come with a parent\"." },
+              { "q": "How should people register?", "options": ["A by phone", "B in person", "C online"], "answer": ["C"], "why": "\"fill in the online form rather than phoning the office\"." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

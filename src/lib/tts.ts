@@ -21,4 +21,4 @@ export function speak(text: string, opts: { accent?: Accent; rate?: number; onen
   if (opts.onend) u.onend = opts.onend;
   s.speak(u);
 }
-export const stopSpeaking = () => ttsSupported() && window.speechSynthesis.cancel();
+export function stopSpeaking() { if (ttsSupported()) window.speechSynthesis.cancel(); }

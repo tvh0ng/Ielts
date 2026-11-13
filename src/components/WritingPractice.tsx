@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { BookText, Dices, Loader2, Pause, Play, RotateCcw, Sparkles, Wand2 } from "lucide-react";
 import writing from "@/data/writing.json";
+import samplesJson from "@/data/samples.json";
 import { analyzeWriting, type Feedback } from "@/lib/analyze";
 import { callAi, useAiEnabled } from "@/lib/ai-client";
 import { useStore } from "@/lib/storage";
@@ -28,7 +29,13 @@ export function WritingPractice() {
   const target = task === 1 ? 150 : 250;
   const wc = (essay.match(/[A-Za-z0-9'’]+/g) || []).length;
 
-  useEffect(() => { if (ok && !prompt) setPrompt(BANK[task][0]); }, [ok]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (!ok) return;
+    const mau = new URLSearchParams(window.location.search).get("mau");
+    const s = (samplesJson as { slug: string; task: Task; prompt: string }[]).find((x) => x.slug === mau);
+    if (s) { setTask(s.task); setPrompt(s.prompt); setSecs(s.task === 1 ? 1200 : 2400); if (prompt !== s.prompt) setEssay(""); return; }
+    if (!prompt) setPrompt(BANK[task][0]);
+  }, [ok]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!running) return;
     timer.current = setInterval(() => setSecs((s) => { if (s <= 1) { setRunning(false); return 0; } return s - 1; }), 1000);

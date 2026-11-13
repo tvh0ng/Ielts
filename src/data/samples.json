@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "task-1-internet-access-four-countries",
+    "task": 1,
+    "type": "Bar chart",
+    "band": "8.0",
+    "title": "Households with internet access in four countries (2010 vs 2020)",
+    "prompt": "The chart below shows the percentage of households with internet access in four countries in 2010 and 2020.\n\nUSA: 70% → 92%\nJapan: 65% → 90%\nBrazil: 30% → 75%\nIndia: 10% → 55%\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "outline": [
+      "Mở bài: paraphrase — 'compares the proportion of homes connected to the internet'.",
+      "Overview: cả 4 nước đều tăng; USA & Japan dẫn đầu, nhưng Brazil & India tăng mạnh nhất → khoảng cách thu hẹp.",
+      "Thân 1: USA, Japan — mức cao sẵn, tăng ~25 điểm %.",
+      "Thân 2: Brazil, India — xuất phát thấp, tăng 45 điểm %; India tăng hơn 5 lần."
+    ],
+    "essay": "The bar chart compares the proportion of homes connected to the internet in the USA, Japan, Brazil and India in 2010 and 2020.\n\nOverall, internet access rose considerably in all four countries over the decade. While the USA and Japan had the highest rates in both years, Brazil and India experienced the most dramatic growth, which significantly narrowed the gap between the developed and developing nations.\n\nIn 2010, 70% of American households were online, slightly more than the figure for Japan, at 65%. Ten years later, both countries had reached near-universal coverage, with the USA rising to 92% and Japan to 90%. In other words, the two leading nations increased by roughly a quarter of all households.\n\nBy contrast, Brazil and India started from a much lower base. Only 30% of Brazilian homes had internet access in 2010, but this proportion more than doubled to 75% by 2020. The most remarkable change was in India, where the figure jumped from just one in ten households to 55%, a more than fivefold increase. Nevertheless, India remained the country with the lowest level of access at the end of the period.",
+    "vocab": [
+      ["the proportion of homes connected to the internet", "tỉ lệ hộ gia đình có kết nối internet"],
+      ["near-universal coverage", "độ phủ gần như toàn bộ"],
+      ["start from a much lower base", "xuất phát từ mức thấp hơn nhiều"],
+      ["a more than fivefold increase", "mức tăng hơn năm lần"],
+      ["narrow the gap", "thu hẹp khoảng cách"]
+    ]
+  },
+  {
+    "slug": "task-1-transport-to-work-table",
+    "task": 1,
+    "type": "Table",
+    "band": "8.0",
+    "title": "How people travelled to work in a city (2005 vs 2020)",
+    "prompt": "The table below shows the percentage of people using different transport to work in a city in 2005 and 2020.\n\nCar: 55% → 40%\nBus: 25% → 22%\nBicycle: 10% → 25%\nWalking: 10% → 13%\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "outline": [
+      "Mở bài: paraphrase 'the means of transport commuters used'.",
+      "Overview: xe hơi vẫn phổ biến nhất nhưng giảm; xe đạp tăng mạnh nhất.",
+      "Thân 1: car giảm 15 điểm; bus giảm nhẹ.",
+      "Thân 2: bicycle tăng 2,5 lần, vượt bus; walking tăng nhẹ."
+    ],
+    "essay": "The table illustrates the means of transport that commuters in a particular city used to get to work in 2005 and 2020.\n\nOverall, although the car remained the most common way of travelling to work, its share fell noticeably. The most striking change was the rise in cycling, which became the second most popular option by the end of the period.\n\nIn 2005, more than half of all commuters (55%) drove to work. Fifteen years later, this figure had dropped to 40%. Bus use also declined, but only marginally, from a quarter of workers to 22%.\n\nIn contrast, the proportion of people cycling to work increased two and a half times, climbing from 10% to 25%. As a result, the bicycle overtook the bus as a means of commuting. Walking, which had been as popular as cycling in 2005 at 10%, saw only a modest rise to 13% in 2020, making it the least used option in that year.",
+    "vocab": [
+      ["the means of transport", "phương tiện đi lại"],
+      ["commuters", "người đi làm hằng ngày"],
+      ["decline marginally", "giảm không đáng kể"],
+      ["overtake", "vượt qua"],
+      ["a modest rise", "mức tăng nhẹ"]
+    ]
+  },
+  {
+    "slug": "task-2-working-from-home",
+    "task": 2,
+    "type": "Advantages / Disadvantages",
+    "band": "8.0",
+    "title": "Working from home: do the advantages outweigh the disadvantages?",
+    "prompt": "Working from home is becoming more common. Do the advantages of this trend outweigh the disadvantages?",
+    "outline": [
+      "Mở bài: nêu xu hướng + quan điểm rõ: lợi ích lớn hơn, với điều kiện có mô hình kết hợp.",
+      "Thân 1 (lợi): tiết kiệm thời gian/chi phí đi lại → năng suất & cân bằng cuộc sống; doanh nghiệp tiếp cận nhân tài rộng hơn.",
+      "Thân 2 (hại): cô lập, khó kèm cặp nhân viên mới → nhưng có thể khắc phục bằng vài ngày ở văn phòng.",
+      "Kết luận: nhắc lại quan điểm."
+    ],
+    "essay": "Since the pandemic, working from home has shifted from an unusual perk to a normal arrangement for millions of office workers. Although this trend has some genuine drawbacks, I believe its advantages are greater, particularly when remote work is combined with some time in the office.\n\nThe most obvious benefit is the time and money that employees save by not commuting. A worker who previously spent two hours a day in traffic can use that time to rest, exercise or care for family members, which tends to improve both wellbeing and productivity. Employers also gain, because they are no longer limited to hiring people who live within travelling distance of the office. A small firm in a provincial town can recruit a skilled designer from another city, widening its talent pool without the cost of relocation.\n\nThat said, working remotely can be isolating. Without casual conversations in the corridor, employees may feel disconnected from their colleagues, and new staff in particular may find it harder to learn from more experienced team members. Some managers also worry that a strong company culture is difficult to build through a screen. However, these problems are largely solved by hybrid schedules. If teams meet in person two or three days a week for training, planning and social contact, the remaining days can be used for focused work at home.\n\nIn conclusion, while working from home may weaken relationships between colleagues, the gains in flexibility, cost savings and access to talent are more significant. With a sensible hybrid model, the benefits of this trend clearly outweigh its disadvantages.",
+    "vocab": [
+      ["an unusual perk", "một đặc quyền hiếm có"],
+      ["widen its talent pool", "mở rộng nguồn nhân tài"],
+      ["feel disconnected from", "cảm thấy tách biệt khỏi"],
+      ["hybrid schedules", "lịch làm việc kết hợp"],
+      ["clearly outweigh", "lớn hơn hẳn"]
+    ]
+  },
+  {
+    "slug": "task-2-environment-governments-or-individuals",
+    "task": 2,
+    "type": "Opinion (Agree / Disagree)",
+    "band": "8.0",
+    "title": "Protecting the environment: governments or individuals?",
+    "prompt": "Many people believe that protecting the environment is the responsibility of governments, not individuals. To what extent do you agree or disagree?",
+    "outline": [
+      "Mở bài: đồng ý một phần — chính phủ đóng vai trò chính nhưng cá nhân vẫn quan trọng.",
+      "Thân 1: chính phủ có công cụ quy mô lớn: luật, thuế carbon, đầu tư năng lượng sạch.",
+      "Thân 2: cá nhân tạo nhu cầu & áp lực chính trị; hành vi cộng dồn.",
+      "Kết luận: trách nhiệm chung, chính phủ dẫn dắt."
+    ],
+    "essay": "It is often argued that environmental protection should be left to governments rather than ordinary citizens. While I agree that the state must take the leading role, I do not accept that individuals have no responsibility at all.\n\nThere are strong reasons why governments are best placed to tackle environmental problems. Only national authorities can pass laws that limit industrial pollution, introduce carbon taxes or ban harmful products such as single-use plastics. They also control the budgets needed for large-scale projects, for instance building public transport networks or investing in wind and solar power. A single family recycling its rubbish cannot achieve the same impact as a law that forces every factory to cut its emissions.\n\nNevertheless, individual choices still matter, for two reasons. First, the combined effect of millions of people changing their habits is substantial. If commuters choose to cycle or take the bus and households reduce food waste, overall emissions fall noticeably. Second, citizens influence what governments do. Consumers who demand sustainable products push companies to change, and voters who care about climate change encourage politicians to adopt greener policies. In many countries, environmental laws were introduced only after years of public campaigning.\n\nIn conclusion, governments have the power and resources to make the biggest difference, so they should lead the effort to protect the environment. However, individuals share this responsibility, both through their daily behaviour and through the pressure they place on those in power.",
+    "vocab": [
+      ["be best placed to", "ở vị trí phù hợp nhất để"],
+      ["single-use plastics", "nhựa dùng một lần"],
+      ["the combined effect", "tác động cộng dồn"],
+      ["adopt greener policies", "áp dụng chính sách xanh hơn"],
+      ["public campaigning", "vận động công chúng"]
+    ]
+  }
+]

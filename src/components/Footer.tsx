@@ -3,9 +3,9 @@ import { Logo } from "./Logo";
 import { SITE } from "@/lib/site";
 
 const cols = [
-  { h: "Học", links: [["/lo-trinh", "Lộ trình 0 → 9.0"], ["/tu-vung", "1.100+ collocation"], ["/ngu-phap", "Ngữ pháp theo band"], ["/tai-lieu", "Tài liệu & ghi chú"]] },
-  { h: "Luyện thi", links: [["/luyen-tap", "Bài tập mini"], ["/luyen-tap/writing", "Luyện Writing (AI)"], ["/luyen-tap/speaking", "Luyện Speaking (AI)"], ["/tinh-diem", "Tính điểm band"]] },
-  { h: "Kỹ năng", links: [["/ky-nang/listening", "Listening"], ["/ky-nang/reading", "Reading"], ["/ky-nang/writing", "Writing"], ["/ky-nang/speaking", "Speaking"]] },
+  { h: "Luyện thi", links: [["/de-thi", "IELTS Online Test"], ["/chep-chinh-ta", "Chép chính tả"], ["/luyen-tap/writing", "Luyện Writing (AI)"], ["/luyen-tap/speaking", "Luyện Speaking (AI)"]] },
+  { h: "Học", links: [["/lo-trinh", "Lộ trình 0 → 9.0"], ["/tu-vung", "1.100+ collocation"], ["/bai-mau", "Bài mẫu band 8.0+"], ["/ngu-phap", "Ngữ pháp theo band"]] },
+  { h: "Công cụ", links: [["/tinh-diem", "Tính điểm band"], ["/ky-nang/listening", "Dạng bài 4 kỹ năng"], ["/tai-lieu", "Tài liệu tự học"], ["/tien-do", "Tiến độ & sao lưu"]] },
 ];
 
 export function Footer() {

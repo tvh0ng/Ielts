@@ -1,24 +1,53 @@
 import Link from "next/link";
-import { ArrowRight, Bot, Brain, Headphones, BookOpenText, PenLine, Mic, Map, Sparkles, Smartphone } from "lucide-react";
+import { ArrowRight, Bot, ChevronRight, FileCheck2, Headphones, Layers, Map, NotebookPen, Sparkles } from "lucide-react";
 import { Dashboard } from "@/components/Dashboard";
+import { RecentActivity } from "@/components/RecentActivity";
+import { DictationList } from "@/components/DictationList";
+import { TestCard } from "@/components/TestCard";
+import { SampleCard } from "@/components/SampleCard";
+import { Cover, themeAt } from "@/components/Cover";
 import { JsonLd } from "@/components/ui";
-import { cards, roadmap, skills, stageSlug, topics, grammar, notes } from "@/lib/data";
+import { cards, roadmap, stageSlug, topics } from "@/lib/data";
+import { dictations, samples, tests } from "@/lib/content";
 import { SITE } from "@/lib/site";
 
 const FAQ: [string, string][] = [
-  ["IELTS Master có miễn phí không?", "Có. Toàn bộ lộ trình, 1.100+ collocation, ngữ pháp, bài tập và công cụ tính điểm đều miễn phí. Tiến độ lưu ngay trên trình duyệt của bạn, không cần đăng ký."],
-  ["Tự học từ 4.5 lên 7.0 mất bao lâu?", "Thông thường cần khoảng 400–500 giờ học có định hướng. Hãy nhập band hiện tại, mục tiêu và số giờ học mỗi ngày ở Bảng học để có ước tính riêng cho bạn."],
-  ["Flashcard ở đây khác gì học thuộc thông thường?", "Thẻ được lên lịch ôn theo thuật toán lặp lại ngắt quãng (giống Anki): từ bạn nhớ tốt sẽ giãn lịch ôn, từ hay quên sẽ quay lại sớm hơn — tiết kiệm thời gian mà nhớ lâu."],
+  ["IELTS Master có miễn phí không?", "Có. Đề thi online, chép chính tả, 1.100+ collocation, bài mẫu, lộ trình và công cụ tính điểm đều miễn phí. Tiến độ lưu ngay trên trình duyệt, không cần đăng ký."],
+  ["Tự học từ 4.5 lên 7.0 mất bao lâu?", "Thông thường cần khoảng 400–500 giờ học có định hướng. Nhập band hiện tại, mục tiêu và số giờ học mỗi ngày ở Bảng học để có ước tính riêng cho bạn."],
+  ["Chép chính tả giúp gì cho IELTS Listening?", "Chép từng câu buộc bạn nghe rõ từng âm, nối âm và dạng số nhiều — đúng những lỗi khiến thí sinh mất điểm ở Part 1 và Part 4."],
   ["AI chấm Writing/Speaking chính xác đến mức nào?", "AI chấm theo 4 tiêu chí của band descriptors công khai và chỉ ra lỗi cụ thể để bạn sửa. Đây là điểm ước lượng để luyện tập, không thay thế giám khảo chính thức."],
 ];
 
-const SK_ICON = { L: Headphones, R: BookOpenText, W: PenLine, S: Mic } as const;
-const SK_SLUG = { L: "listening", R: "reading", W: "writing", S: "speaking" } as const;
+const FEATURES = [
+  { Icon: FileCheck2, t: "IELTS Online Test", d: "Làm đề Reading, Listening như thi trên máy: bấm giờ, chấm điểm, giải thích từng câu.", href: "/de-thi", c: "bg-violet-500/10 text-violet-600 dark:text-violet-300" },
+  { Icon: Headphones, t: "Chép chính tả", d: "Nghe từng câu, gõ lại, hệ thống chấm từng từ. Có bản dịch và transcript.", href: "/chep-chinh-ta", c: "bg-sky-500/10 text-sky-600 dark:text-sky-300" },
+  { Icon: Layers, t: "Flashcard thông minh", d: "1.100+ collocation theo 62 chủ đề, ôn theo lịch lặp lại ngắt quãng như Anki.", href: "/tu-vung", c: "bg-brand-500/10 text-brand-600 dark:text-brand-300" },
+  { Icon: NotebookPen, t: "Bài mẫu Writing & Speaking", d: "Bài band 8.0+ có dàn ý, từ vựng được tô sáng và bản đọc mẫu.", href: "/bai-mau", c: "bg-amber-500/10 text-amber-600 dark:text-amber-300" },
+  { Icon: Bot, t: "AI chấm bài", d: "Chấm Writing, Speaking theo 4 tiêu chí, gạch lỗi và sửa một chạm.", href: "/luyen-tap", c: "bg-rose-500/10 text-rose-600 dark:text-rose-300" },
+  { Icon: Map, t: "Lộ trình 0 → 9.0", d: "Biết chính xác cần học gì ở từng band, có checklist và lịch tuần.", href: "/lo-trinh", c: "bg-lime-500/10 text-lime-700 dark:text-lime-300" },
+];
+
+function Row({ title, href, children }: { title: string; href: string; children: React.ReactNode }) {
+  return (
+    <section className="container-x mt-16">
+      <div className="flex items-end justify-between gap-3">
+        <h2 className="title-display text-2xl sm:text-3xl">{title}</h2>
+        <Link href={href} className="inline-flex items-center gap-0.5 text-sm font-semibold text-muted hover:text-ink">Xem thêm <ChevronRight className="size-4" /></Link>
+      </div>
+      <div className="mt-6">{children}</div>
+    </section>
+  );
+}
 
 export default function Home() {
   const stages = roadmap.map((s) => ({ id: s.id, name: s.name, range: s.range, lo: s.lo, hi: s.hi, hours: s.hours, slug: stageSlug(s) }));
-  const qTypes = Object.values(skills).reduce((a, s) => a + s.types.length, 0);
-  const stats = [[`${cards.length.toLocaleString("vi-VN")}+`, "collocation có ví dụ & IPA"], [`${topics.length}`, "chủ đề từ vựng"], [`${qTypes}`, "dạng bài 4 kỹ năng"], [`${grammar.length}`, "chủ điểm ngữ pháp"]];
+  const fan = [
+    { label: "IELTS Reading", big: "Mini Test 1", theme: "violet" as const },
+    { label: "Chép chính tả", big: "Part 4", theme: "sky" as const },
+    { label: "Writing Task 2", big: "Band 8.0", theme: "amber" as const },
+    { label: "Collocation", big: "1.100+ thẻ", theme: "teal" as const },
+    { label: "IELTS Listening", big: "Mini Test 1", theme: "rose" as const },
+  ];
 
   return (
     <>
@@ -26,149 +55,114 @@ export default function Home() {
       <JsonLd data={{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQ.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }} />
 
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-line">
-        <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(900px_420px_at_10%_-10%,color-mix(in_oklab,var(--color-brand-300)_35%,transparent),transparent_60%),radial-gradient(700px_380px_at_100%_0%,color-mix(in_oklab,var(--color-accent-400)_22%,transparent),transparent_60%)]" />
-        <div className="container-x relative grid items-center gap-10 py-14 sm:py-20 lg:grid-cols-[1.15fr_1fr]">
-          <div>
-            <span className="chip"><Sparkles className="size-3.5 text-accent-500" /> Miễn phí · Không cần đăng ký</span>
-            <h1 className="title-display mt-5 text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-balance">
-              Lộ trình IELTS <span className="whitespace-nowrap text-brand-500">0 → 9.0</span>, học mỗi ngày 20 phút cũng tiến bộ.
+      <section className="relative overflow-hidden bg-hero">
+        <div className="container-x grid items-center gap-10 py-14 sm:py-20 lg:grid-cols-[1.1fr_1fr]">
+          <div className="relative z-10">
+            <span className="chip"><Sparkles className="size-3.5 text-accent-500" /> 100% miễn phí · Không cần đăng ký</span>
+            <h1 className="title-display mt-5 text-4xl leading-[1.08] sm:text-5xl lg:text-[3.6rem]">
+              Nền tảng tự học<br />
+              <span className="relative inline-block">IELTS 4 kỹ năng<svg aria-hidden className="absolute left-0 top-[88%] w-full text-accent-400" height="10" viewBox="0 0 200 12" preserveAspectRatio="none"><path d="M2 9c40-6 120-8 196-3" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" /></svg></span><br />
+              <span className="text-brand-500">hiệu quả & miễn phí</span>
             </h1>
-            <p className="mt-5 max-w-xl text-lg text-muted text-pretty">
-              Biết chính xác cần học gì ở từng band, ôn từ vựng bằng flashcard thông minh và luyện Writing, Speaking có AI chấm điểm — tất cả trong một nơi.
-            </p>
+            <p className="mt-6 max-w-xl text-lg text-muted text-pretty">Làm đề online có chấm điểm, luyện nghe chép chính tả, học từ vựng bằng flashcard thông minh và nhận phản hồi Writing, Speaking từ AI — theo lộ trình rõ ràng từ 0 đến 9.0.</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/lo-trinh" className="btn-primary text-base px-6 py-3">Xem lộ trình của tôi <ArrowRight className="size-4" /></Link>
-              <Link href="/tu-vung/on-tap" className="btn-ghost text-base px-6 py-3">Học 10 thẻ đầu tiên</Link>
+              <Link href="/de-thi" className="btn-primary px-6 py-3 text-base">Làm đề miễn phí <ArrowRight className="size-4" /></Link>
+              <Link href="/lo-trinh" className="btn-ghost px-6 py-3 text-base">Xem lộ trình</Link>
             </div>
-            <dl className="mt-10 grid max-w-xl grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4">
-              {stats.map(([v, l]) => (
-                <div key={l}><dt className="sr-only">{l}</dt><dd className="title-display text-2xl">{v}</dd><dd className="text-xs text-muted">{l}</dd></div>
+            <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4">
+              {[[`${cards.length.toLocaleString("vi-VN")}+`, "collocation"], [`${topics.length}`, "chủ đề"], [`${dictations.length}`, "bài chép chính tả"], [`${tests.length}`, "đề online"]].map(([v, l]) => (
+                <div key={l}><dd className="title-display text-3xl">{v}</dd><dt className="text-sm text-muted">{l}</dt></div>
               ))}
             </dl>
           </div>
-          <HeroCard />
+          <div className="relative hidden lg:block" aria-hidden="true">
+            <div className="relative grid grid-cols-2 gap-5">
+              {fan.slice(0, 4).map((f, i) => (
+                <div key={i} style={{ transform: `translateY(${i % 2 ? 48 : 0}px) rotate(${i % 2 ? 3 : -3}deg)` }}>
+                  <Cover label={f.label} big={f.big} theme={f.theme} className="shadow-xl" />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </section>
-
-      <div className="container-x mt-10"><Dashboard stages={stages} /></div>
-
-      {/* ROADMAP */}
-      <section className="container-x mt-16">
-        <div className="flex flex-wrap items-end justify-between gap-3">
-          <div><p className="eyebrow">Lộ trình</p><h2 className="title-display mt-1 text-3xl">6 chặng từ nền tảng tới 9.0</h2></div>
-          <Link href="/lo-trinh" className="text-sm font-semibold text-brand-600 dark:text-brand-300 hover:underline">Xem chi tiết →</Link>
-        </div>
-        <ol className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {roadmap.map((s, i) => (
-            <li key={s.id}>
-              <Link href={`/lo-trinh/${stageSlug(s)}`} className="card group flex h-full gap-4 p-5 transition hover:-translate-y-0.5 hover:border-brand-300">
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-500 font-display text-lg font-extrabold text-white">{i + 1}</span>
-                <span>
-                  <span className="block font-display text-lg font-bold">{s.name} <span className="text-muted font-semibold text-sm">· {s.range}</span></span>
-                  <span className="mt-1 block text-sm text-muted line-clamp-2">{s.summary}</span>
-                  <span className="mt-2 block text-xs font-semibold text-brand-600 dark:text-brand-300">{s.weeks} · ~{s.hours} giờ</span>
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ol>
       </section>
 
       {/* FEATURES */}
       <section className="container-x mt-16">
-        <p className="eyebrow">Tại sao IELTS Master</p>
-        <h2 className="title-display mt-1 text-3xl">Học đúng thứ cần học, nhớ lâu hơn</h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          {[
-            [Map, "Lộ trình theo band", "Mỗi chặng có mục tiêu điểm từng kỹ năng, ngữ pháp, dạng bài, lịch tuần mẫu, checklist và tiêu chí “qua môn”."],
-            [Brain, "Flashcard lặp lại ngắt quãng", "Thuật toán như Anki: chấm Quên / Khó / Nhớ / Dễ, hệ thống tự hẹn ngày ôn. Có phát âm Anh–Anh, Anh–Mỹ và IPA."],
-            [Bot, "AI chấm Writing & Speaking", "Chấm 4 tiêu chí, gạch lỗi và sửa một chạm, tạo bài mẫu band 8–9. Thu âm Speaking và chuyển lời nói thành chữ."],
-          ].map(([Icon, t, d]) => {
-            const I = Icon as typeof Map;
-            return (
-              <div key={t as string} className="card p-6">
-                <span className="grid size-11 place-items-center rounded-xl bg-brand-50 text-brand-600 dark:bg-brand-900/40 dark:text-brand-200"><I className="size-5" /></span>
-                <h3 className="mt-4 font-display text-lg font-bold">{t as string}</h3>
-                <p className="mt-2 text-sm text-muted">{d as string}</p>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* SKILLS */}
-      <section className="container-x mt-16">
-        <p className="eyebrow">4 kỹ năng</p>
-        <h2 className="title-display mt-1 text-3xl">Nắm chắc từng dạng bài</h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {(Object.keys(skills) as (keyof typeof SK_ICON)[]).map((k) => {
-            const I = SK_ICON[k]; const s = skills[k];
-            return (
-              <Link key={k} href={`/ky-nang/${SK_SLUG[k]}`} className="card p-5 transition hover:-translate-y-0.5 hover:border-brand-300">
-                <I className="size-6 text-brand-500" />
-                <h3 className="mt-3 font-display text-lg font-bold">{s.name}</h3>
-                <p className="mt-1 text-sm text-muted">{s.types.length} dạng bài · {s.fmt[0][0]}</p>
+        <h2 className="title-display text-2xl sm:text-3xl">Mọi thứ bạn cần để tự học IELTS</h2>
+        <ul className="mt-8 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+          {FEATURES.map(({ Icon, t, d, href, c }) => (
+            <li key={t}>
+              <Link href={href} className="group block">
+                <span className={`grid size-12 place-items-center rounded-full ${c}`}><Icon className="size-5" /></span>
+                <h3 className="mt-4 text-lg font-bold group-hover:text-brand-600 dark:group-hover:text-brand-300">{t}</h3>
+                <p className="mt-1.5 text-sm text-muted">{d}</p>
               </Link>
-            );
-          })}
-        </div>
+            </li>
+          ))}
+        </ul>
       </section>
 
-      {/* LIBRARY + PWA */}
-      <section className="container-x mt-16 grid gap-4 lg:grid-cols-[2fr_1fr]">
-        <div className="card p-6">
-          <p className="eyebrow">Thư viện</p>
-          <h2 className="title-display mt-1 text-2xl">Tài liệu tự học</h2>
-          <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-            {notes.map((n) => <li key={n.slug}><Link href={`/tai-lieu/${n.slug}`} className="block rounded-xl bg-surface-2 px-4 py-3 text-sm font-semibold hover:bg-brand-50 dark:hover:bg-brand-900/30">{n.label}</Link></li>)}
-          </ul>
-        </div>
-        <div className="card flex flex-col justify-between p-6 bg-brand-700 text-white border-brand-700">
-          <div>
-            <Smartphone className="size-7" />
-            <h2 className="title-display mt-3 text-2xl">Cài như một app</h2>
-            <p className="mt-2 text-sm text-brand-100">Trên điện thoại, chọn “Thêm vào màn hình chính” để mở IELTS Master toàn màn hình, nhanh như ứng dụng.</p>
+      <div className="container-x mt-16"><RecentActivity /></div>
+
+      <div className="container-x mt-12"><Dashboard stages={stages} /></div>
+
+      <Row title="IELTS Online Test" href="/de-thi">
+        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{tests.map((t) => <li key={t.slug}><TestCard t={t} /></li>)}</ul>
+      </Row>
+
+      <Row title="Luyện nghe chép chính tả" href="/chep-chinh-ta">
+        <DictationList items={dictations} limit={4} />
+      </Row>
+
+      <Row title="Từ vựng theo chủ đề" href="/tu-vung">
+        <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+          {topics.filter((t) => t.group === "Chủ đề").slice(0, 12).map((t, i) => (
+            <li key={t.slug}>
+              <Link href={`/tu-vung/${t.slug}`} className="group block">
+                <Cover label={`${t.count} cụm từ`} big={t.name} theme={themeAt(i)} className="aspect-square transition group-hover:-translate-y-0.5 [&_span:last-child]:text-lg" />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Row>
+
+      <Row title="Bài mẫu Writing band 8.0+" href="/bai-mau">
+        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">{samples.map((s) => <li key={s.slug}><SampleCard s={s} /></li>)}</ul>
+      </Row>
+
+      <Row title="Lộ trình 0 → 9.0" href="/lo-trinh">
+        <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+          {roadmap.map((s, i) => (
+            <li key={s.id}><Link href={`/lo-trinh/${stageSlug(s)}`} className="card block h-full p-4 transition hover:border-brand-300">
+              <span className="text-xs font-bold text-brand-600 dark:text-brand-300">Chặng {i + 1}</span>
+              <span className="mt-1 block font-bold">{s.name}</span><span className="block text-xs text-muted">{s.range} · {s.weeks}</span>
+            </Link></li>
+          ))}
+        </ol>
+      </Row>
+
+      <section className="container-x mt-16">
+        <div className="relative overflow-hidden rounded-3xl bg-brand-700 px-6 py-10 text-white sm:px-12">
+          <svg aria-hidden className="absolute -right-10 -top-10 size-64 text-white/10" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" strokeWidth="8" /><circle cx="50" cy="50" r="24" fill="none" stroke="currentColor" strokeWidth="8" /></svg>
+          <div className="relative flex flex-wrap items-center justify-between gap-6">
+            <div><h2 className="title-display text-3xl">Bắt đầu với 20 phút mỗi ngày</h2><p className="mt-2 max-w-xl text-brand-100">10 thẻ từ vựng, 1 bài chép chính tả và 1 đoạn Writing — đều đặn là cách nhanh nhất để lên band.</p></div>
+            <Link href="/tu-vung/on-tap" className="btn bg-white px-6 py-3 text-base text-brand-800 hover:bg-brand-50">Học ngay <ArrowRight className="size-4" /></Link>
           </div>
-          <Link href="/tu-vung/on-tap" className="btn mt-6 bg-white text-brand-800 hover:bg-brand-50">Bắt đầu học</Link>
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="container-x mt-16 max-w-3xl">
-        <h2 className="title-display text-3xl text-center">Câu hỏi thường gặp</h2>
+        <h2 className="title-display text-center text-3xl">Câu hỏi thường gặp</h2>
         <div className="mt-6 space-y-3">
           {FAQ.map(([q, a]) => (
             <details key={q} className="card group p-5 [&_summary::-webkit-details-marker]:hidden">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">{q}<span className="text-brand-500 transition group-open:rotate-45 text-xl leading-none">+</span></summary>
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">{q}<span className="text-xl leading-none text-brand-500 transition group-open:rotate-45">+</span></summary>
               <p className="mt-3 text-sm text-muted">{a}</p>
             </details>
           ))}
         </div>
       </section>
     </>
-  );
-}
-
-function HeroCard() {
-  const c = cards.find((x) => x.c === "acquire knowledge") || cards[0];
-  return (
-    <div className="relative mx-auto hidden w-full max-w-md sm:block" aria-hidden="true">
-      <div className="absolute -inset-4 -z-10 rotate-3 rounded-3xl bg-accent-400/25" />
-      <div className="card p-6 sm:p-8">
-        <div className="flex items-center justify-between text-xs font-semibold text-muted"><span>Education</span><span>Thẻ 1 / 20</span></div>
-        <p className="title-display mt-8 text-3xl">{c.c}</p>
-        <p className="mt-1 text-sm text-muted">{c.ipa}</p>
-        <div className="my-6 h-px bg-line" />
-        <p className="font-semibold">{c.m}</p>
-        <p className="mt-2 text-sm italic text-muted">“{c.e}”</p>
-        <div className="mt-8 grid grid-cols-4 gap-2 text-center text-xs font-bold">
-          <span className="rounded-lg bg-rose-100 py-2 text-rose-700 dark:bg-rose-900/40 dark:text-rose-200">Quên</span>
-          <span className="rounded-lg bg-amber-100 py-2 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200">Khó</span>
-          <span className="rounded-lg bg-brand-100 py-2 text-brand-800 dark:bg-brand-900/50 dark:text-brand-200">Nhớ</span>
-          <span className="rounded-lg bg-sky-100 py-2 text-sky-800 dark:bg-sky-900/40 dark:text-sky-200">Dễ</span>
-        </div>
-      </div>
-    </div>
   );
 }
