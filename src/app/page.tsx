@@ -11,6 +11,7 @@ import { cards, roadmap, stageSlug, topics } from "@/lib/data";
 import { dictations, samples, tests } from "@/lib/content";
 import { SITE } from "@/lib/site";
 import { posts } from "@/lib/blog";
+import { courses, lessonCount } from "@/lib/courses";
 import { PostCard } from "@/components/PostCard";
 
 const FAQ: [string, string][] = [
@@ -108,6 +109,18 @@ export default function Home() {
       <div className="container-x mt-16"><RecentActivity /></div>
 
       <div className="container-x mt-12"><Dashboard stages={stages} /></div>
+
+      <Row title="Khoá học IELTS" href="/khoa-hoc">
+        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          {courses.map((c) => (
+            <li key={c.slug}><Link href={`/khoa-hoc/${c.slug}`} className="group block">
+              <Cover label={c.short} big={c.title.replace("IELTS ", "")} theme={c.theme} className="transition group-hover:-translate-y-0.5 group-hover:shadow-lg [&_span:last-child]:text-xl" />
+              <h3 className="mt-3 font-bold group-hover:text-brand-600 dark:group-hover:text-brand-300">{c.title}</h3>
+              <p className="text-xs text-muted">{lessonCount(c)} bài · Band {c.level}</p>
+            </Link></li>
+          ))}
+        </ul>
+      </Row>
 
       <Row title="IELTS Online Test" href="/de-thi">
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{tests.slice(0, 6).map((t) => <li key={t.slug}><TestCard t={t} /></li>)}</ul>

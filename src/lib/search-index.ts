@@ -2,6 +2,7 @@ import { MENU } from "@/lib/site";
 import { topics, grammar, notes, roadmap, stageSlug, skills, SKILL_SLUG } from "@/lib/data";
 import { dictations, tests, samples } from "@/lib/content";
 import { posts } from "@/lib/blog";
+import { courses } from "@/lib/courses";
 
 export interface SearchEntry { t: string; s: string; href: string; k: string }
 
@@ -10,6 +11,7 @@ export function buildIndex(): SearchEntry[] {
   const out: SearchEntry[] = [];
   MENU.forEach((g) => g.items.forEach(([href, t, s]) => out.push({ t, s: s || g.h, href, k: "Trang" })));
   posts.forEach((p) => out.push({ t: p.title, s: `Blog · ${p.category}`, href: `/blog/${p.slug}`, k: "Blog" }));
+  courses.forEach((c) => { out.push({ t: c.title, s: `Khoá học · ${c.short}`, href: `/khoa-hoc/${c.slug}`, k: "Khoá học" }); c.chapters.forEach((ch) => ch.lessons.forEach((l) => l.kind === "article" && out.push({ t: l.title, s: `${c.title} · ${ch.title}`, href: `/khoa-hoc/${c.slug}/${l.slug}`, k: "Bài học" }))); });
   tests.forEach((t) => out.push({ t: t.title, s: `IELTS ${t.skill} · ${t.sections.map((x) => x.title).join(" · ")}`, href: `/de-thi/${t.slug}`, k: "Đề thi" }));
   dictations.forEach((d) => out.push({ t: d.title, s: `Chép chính tả · ${d.part}`, href: `/chep-chinh-ta/${d.slug}`, k: "Luyện nghe" }));
   samples.forEach((x) => out.push({ t: x.title, s: `Bài mẫu Writing Task ${x.task}`, href: `/bai-mau/${x.slug}`, k: "Bài mẫu" }));

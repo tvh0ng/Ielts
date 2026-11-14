@@ -3,6 +3,7 @@ import { SKILL_SLUG, notes, roadmap, stageSlug, topics } from "@/lib/data";
 import { EX_META } from "@/lib/exercises";
 import { dictations, samples, tests } from "@/lib/content";
 import { posts } from "@/lib/blog";
+import { allLessons, courses } from "@/lib/courses";
 import { SITE } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -19,6 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...tests.map((t) => u(`/de-thi/${t.slug}`, 0.8)),
     ...dictations.map((d) => u(`/chep-chinh-ta/${d.slug}`, 0.7)),
     ...samples.map((s) => u(`/bai-mau/${s.slug}`, 0.7)),
+    u("/khoa-hoc", 0.9, "weekly"),
+    ...courses.map((c) => u(`/khoa-hoc/${c.slug}`, 0.9)),
+    ...courses.flatMap((c) => allLessons(c).map((l) => u(`/khoa-hoc/${c.slug}/${l.slug}`, 0.6))),
     u("/blog", 0.8, "weekly"), u("/nang-cap", 0.5),
     ...posts.map((p) => u(`/blog/${p.slug}`, 0.7)),
     ...notes.map((n) => u(`/tai-lieu/${n.slug}`, 0.6)),

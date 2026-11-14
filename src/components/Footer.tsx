@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site";
 
 const cols = [
   { h: "Luyện thi", links: [["/de-thi", "IELTS Online Test"], ["/chep-chinh-ta", "Chép chính tả"], ["/luyen-tap/writing", "Luyện Writing (AI)"], ["/luyen-tap/speaking", "Luyện Speaking (AI)"]] },
-  { h: "Học", links: [["/lo-trinh", "Lộ trình 0 → 9.0"], ["/tu-vung", "1.100+ collocation"], ["/bai-mau", "Bài mẫu band 8.0+"], ["/ngu-phap", "Ngữ pháp theo band"]] },
+  { h: "Học", links: [["/khoa-hoc", "Khoá học IELTS"], ["/lo-trinh", "Lộ trình 0 → 9.0"], ["/tu-vung", "1.100+ collocation"], ["/bai-mau", "Bài mẫu band 8.0+"], ["/ngu-phap", "Ngữ pháp theo band"]] },
   { h: "Công cụ", links: [["/tinh-diem", "Tính điểm band"], ["/ky-nang/listening", "Dạng bài 4 kỹ năng"], ["/tai-lieu", "Tài liệu tự học"], ["/tien-do", "Kết quả & tiến độ"], ["/blog", "Blog"], ["/nang-cap", "Bảng giá"]] },
 ];
 

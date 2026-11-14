@@ -31,7 +31,10 @@ export function WritingPractice() {
 
   useEffect(() => {
     if (!ok) return;
-    const mau = new URLSearchParams(window.location.search).get("mau");
+    const sp = new URLSearchParams(window.location.search);
+    const de = sp.get("de"); const tk = sp.get("task");
+    if (de) { const t = (tk === "1" ? 1 : 2) as Task; setTask(t); if (prompt !== de) setEssay(""); setPrompt(de); setSecs(t === 1 ? 1200 : 2400); return; }
+    const mau = sp.get("mau");
     const s = (samplesJson as { slug: string; task: Task; prompt: string }[]).find((x) => x.slug === mau);
     if (s) { setTask(s.task); setPrompt(s.prompt); setSecs(s.task === 1 ? 1200 : 2400); if (prompt !== s.prompt) setEssay(""); return; }
     if (!prompt) setPrompt(BANK[task][0]);

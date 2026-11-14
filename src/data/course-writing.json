@@ -1,0 +1,203 @@
+[
+  {
+    "title": "Chương 1 · Nền tảng Writing",
+    "lessons": [
+      {
+        "slug": "tieu-chi-cham-va-doc-de",
+        "title": "4 tiêu chí chấm & cách đọc đề",
+        "minutes": 10,
+        "theory": "<p>Mỗi bài Writing được chấm theo <b>4 tiêu chí ngang nhau (25%)</b>. Hiểu rõ từng tiêu chí giúp bạn biết mình mất điểm ở đâu.</p><table><tr><th>Tiêu chí</th><th>Giám khảo hỏi</th></tr><tr><td>Task Achievement / Response</td><td>Bài có trả lời đúng và đủ mọi phần của đề không?</td></tr><tr><td>Coherence & Cohesion</td><td>Ý có sắp xếp logic, chia đoạn rõ, liên kết tự nhiên không?</td></tr><tr><td>Lexical Resource</td><td>Từ vựng có đa dạng, chính xác, đúng collocation không?</td></tr><tr><td>Grammatical Range & Accuracy</td><td>Có dùng nhiều cấu trúc câu và ít lỗi không?</td></tr></table><h4>Đọc đề trong 2 phút</h4><ol><li>Gạch chân <b>chủ đề</b> (topic) và <b>phạm vi</b> (ví dụ: <i>young people</i>, <i>in cities</i>).</li><li>Xác định <b>câu hỏi chính</b>: đồng ý? thảo luận? nguyên nhân – giải pháp?</li><li>Đếm số câu hỏi: đề có 2 câu hỏi thì phải trả lời cả 2.</li></ol><p class=\"tip\">Lạc đề hoặc trả lời thiếu một phần là lỗi khiến Task Response bị giới hạn ở band 5, dù ngữ pháp và từ vựng tốt.</p>",
+        "language": [["The question asks…", "Đề bài hỏi…"], ["address all parts of the task", "trả lời mọi phần của đề"], ["a clear position", "quan điểm rõ ràng"]],
+        "quiz": [
+          { "q": "Mỗi tiêu chí chấm Writing chiếm bao nhiêu phần trăm điểm?", "options": ["10%", "25%", "40%", "Tuỳ đề"], "answer": 1, "why": "4 tiêu chí có trọng số bằng nhau, mỗi tiêu chí 25%." },
+          { "q": "Đề: “What are the causes of this problem and what can be done?” cần trả lời mấy phần?", "options": ["1", "2", "3", "Chỉ cần nêu quan điểm"], "answer": 1, "why": "Có 2 câu hỏi: nguyên nhân và giải pháp — bỏ một phần sẽ bị trừ Task Response." }
+        ]
+      },
+      {
+        "slug": "paraphrase",
+        "title": "Kỹ thuật paraphrase",
+        "minutes": 12,
+        "theory": "<p>Paraphrase là diễn đạt lại ý của đề bằng từ và cấu trúc khác. Bạn dùng nó ở <b>câu mở bài</b> của cả Task 1 và Task 2.</p><h4>3 cách paraphrase</h4><ol><li><b>Đổi từ đồng nghĩa</b>: <i>shows → illustrates</i>, <i>people → individuals</i>, <i>important → crucial</i>.</li><li><b>Đổi loại từ</b>: <i>increase (v) → an increase (n)</i>, <i>popular → popularity</i>.</li><li><b>Đổi cấu trúc câu</b>: chủ động ↔ bị động, mệnh đề → cụm danh từ.</li></ol><div class=\"tpl\">Đề: Many people believe that children should learn a second language at primary school.\nParaphrase: It is widely argued that young learners ought to begin studying a foreign language in their early school years.</div><p class=\"tip\">Không đổi những từ không có đồng nghĩa chính xác (ví dụ <i>university</i>, <i>internet</i>). Đổi gượng ép còn tệ hơn giữ nguyên.</p>",
+        "language": [["It is widely argued that…", "Nhiều người cho rằng…"], ["illustrates / compares / gives information about", "minh hoạ / so sánh / cung cấp thông tin về"], ["a growing number of", "ngày càng nhiều"]],
+        "quiz": [
+          { "q": "Cách paraphrase nào đúng cho “The chart shows the number of tourists”?", "options": ["The chart shows the number of tourists.", "The chart illustrates how many people visited as tourists.", "The chart is tourists.", "Tourists chart the number."], "answer": 1, "why": "Đổi động từ (shows → illustrates) và cấu trúc (the number of → how many) nhưng giữ nguyên nghĩa." },
+          { "q": "Từ nào KHÔNG nên cố đổi khi paraphrase?", "options": ["important", "people", "smartphone", "show"], "answer": 2, "why": "smartphone là danh từ chuyên biệt, không có đồng nghĩa chính xác." }
+        ]
+      },
+      {
+        "slug": "cau-phuc-cho-writing",
+        "title": "Câu phức & mệnh đề quan hệ",
+        "minutes": 12,
+        "theory": "<p>Band 6 yêu cầu <b>kết hợp câu đơn và câu phức</b>; band 7 cần <b>nhiều câu phức không lỗi</b>. Ba cấu trúc dễ dùng nhất:</p><h4>1. Mệnh đề trạng ngữ</h4><p><i>Although</i>, <i>because</i>, <i>while</i>, <i>if</i>, <i>unless</i>…</p><div class=\"tpl\">Although online courses are convenient, many students still prefer face-to-face classes.</div><h4>2. Mệnh đề quan hệ</h4><p><i>which</i> (vật), <i>who</i> (người), <i>where</i> (nơi chốn). Mệnh đề không xác định có dấu phẩy.</p><div class=\"tpl\">Public transport, which is cheaper than driving, reduces traffic congestion.</div><h4>3. Câu điều kiện</h4><div class=\"tpl\">If governments invested more in cycling lanes, fewer people would drive to work.</div><p class=\"tip\">Câu dài không đồng nghĩa với câu hay. Giữ mỗi câu dưới ~30 từ để hạn chế lỗi.</p>",
+        "language": [["Although + S + V, …", "Mặc dù…"], ["…, which + V", "…, điều này / cái mà…"], ["If + S + V-ed, S + would + V", "Nếu… thì… (giả định)"]],
+        "quiz": [
+          { "q": "Chọn câu đúng ngữ pháp:", "options": ["Although it is expensive, but many people buy it.", "Although it is expensive, many people buy it.", "Although expensive it, many people buy.", "It is expensive although, many people buy it."], "answer": 1, "why": "Although và but không đi cùng nhau trong một câu." },
+          { "q": "Điền đại từ quan hệ: “Hanoi, ___ is the capital, attracts many tourists.”", "options": ["who", "where", "which", "what"], "answer": 2, "why": "Thay cho danh từ chỉ vật/địa danh làm chủ ngữ → which." }
+        ]
+      },
+      {
+        "slug": "lien-ket-va-mach-lac",
+        "title": "Liên kết & mạch lạc (Coherence)",
+        "minutes": 10,
+        "theory": "<p>Coherence là <b>ý sắp xếp hợp lý</b>; Cohesion là <b>công cụ nối</b> các câu. Nhiều bạn lạm dụng từ nối ở đầu mọi câu — giám khảo gọi đây là <i>mechanical</i>.</p><h4>Công cụ liên kết ngoài từ nối</h4><ul><li><b>Đại từ thay thế</b>: <i>this, these, such</i> (<i>This trend…</i>, <i>Such policies…</i>).</li><li><b>Lặp lại có biến đổi</b>: <i>pollution → this environmental problem</i>.</li><li><b>Câu chủ đề</b> đầu đoạn nêu ý chính, các câu sau phát triển ý đó.</li></ul><table><tr><th>Chức năng</th><th>Từ nối</th></tr><tr><td>Thêm ý</td><td>In addition, Furthermore, Not only… but also</td></tr><tr><td>Đối lập</td><td>However, In contrast, Whereas</td></tr><tr><td>Kết quả</td><td>As a result, Consequently, Therefore</td></tr><tr><td>Ví dụ</td><td>For instance, A case in point is</td></tr></table><p class=\"tip\">Mỗi đoạn chỉ nên có 2–3 từ nối rõ ràng; phần còn lại liên kết bằng đại từ và từ đồng nghĩa.</p>",
+        "language": [["This trend…", "Xu hướng này…"], ["A case in point is…", "Một ví dụ điển hình là…"], ["As a result,", "Kết quả là,"]],
+        "quiz": [
+          { "q": "Cách nào giúp liên kết câu tự nhiên nhất?", "options": ["Bắt đầu mọi câu bằng Moreover", "Dùng đại từ thay thế như “This”", "Lặp lại nguyên văn danh từ", "Không dùng từ nối"], "answer": 1, "why": "Đại từ thay thế (this, such) tạo liên kết mà không máy móc." }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Chương 2 · Writing Task 1 (Academic)",
+    "lessons": [
+      {
+        "slug": "cau-truc-task-1-va-overview",
+        "title": "Cấu trúc Task 1 & viết Overview",
+        "minutes": 12,
+        "theory": "<p>Task 1 cần ≥150 từ trong khoảng 20 phút, chia <b>4 đoạn</b>:</p><ol><li><b>Mở bài</b>: paraphrase đề (1 câu).</li><li><b>Overview</b>: 2 đặc điểm nổi bật nhất, <u>không có số liệu</u>.</li><li><b>Thân bài 1</b>: nhóm dữ liệu thứ nhất, có số liệu.</li><li><b>Thân bài 2</b>: nhóm còn lại, có so sánh.</li></ol><h4>Overview tìm gì?</h4><ul><li>Xu hướng chung (tăng/giảm/ổn định).</li><li>Đối tượng cao nhất / thấp nhất.</li><li>Thay đổi lớn nhất hoặc điểm khác biệt rõ nhất.</li></ul><div class=\"tpl\">Overall, it is clear that X increased significantly over the period, while Y remained the least popular option throughout.</div><p class=\"tip\">Thiếu overview là lỗi phổ biến nhất khiến Task Achievement không vượt band 5.</p>",
+        "language": [["Overall, it is clear that…", "Nhìn chung, có thể thấy…"], ["over the period shown", "trong giai đoạn được thể hiện"], ["the most notable change", "thay đổi đáng chú ý nhất"]],
+        "quiz": [
+          { "q": "Overview có nên chứa số liệu cụ thể không?", "options": ["Có, càng nhiều càng tốt", "Không, chỉ nêu đặc điểm chính", "Chỉ khi là bảng", "Chỉ ghi năm"], "answer": 1, "why": "Overview tóm tắt xu hướng/đặc điểm nổi bật; số liệu để ở thân bài." },
+          { "q": "Task 1 nên chia mấy đoạn?", "options": ["2", "3–4", "6", "1"], "answer": 1, "why": "Mở bài, overview, 1–2 đoạn thân bài." }
+        ],
+        "practice": { "task": 1, "prompt": "The chart below shows the percentage of households with internet access in four countries in 2010 and 2020.\n\nUSA: 70% → 92%\nJapan: 65% → 90%\nBrazil: 30% → 75%\nIndia: 10% → 55%\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant." }
+      },
+      {
+        "slug": "line-graph-ngon-ngu-xu-huong",
+        "title": "Line graph: ngôn ngữ mô tả xu hướng",
+        "minutes": 15,
+        "theory": "<p>Line graph thể hiện thay đổi theo thời gian. Bạn cần 2 nhóm ngôn ngữ: <b>xu hướng</b> và <b>mức độ</b>.</p><table><tr><th>Xu hướng</th><th>Động từ</th><th>Danh từ</th></tr><tr><td>Tăng</td><td>rise, increase, climb, grow</td><td>a rise, an increase, growth</td></tr><tr><td>Giảm</td><td>fall, decline, drop, decrease</td><td>a fall, a decline, a drop</td></tr><tr><td>Ổn định</td><td>remain stable, level off</td><td>a period of stability</td></tr><tr><td>Dao động</td><td>fluctuate</td><td>fluctuations</td></tr><tr><td>Đạt đỉnh</td><td>peak at, reach a high of</td><td>a peak</td></tr></table><p><b>Mức độ</b>: <i>sharply, dramatically</i> (mạnh) · <i>steadily, gradually</i> (đều) · <i>slightly, marginally</i> (nhẹ).</p><h4>Hai mẫu câu nên thuộc</h4><div class=\"tpl\">S + V + adv + from X to Y + in/between…\nThe number of cars rose sharply from 2 million to 5 million between 2000 and 2010.\n\nThere was a + adj + N + in + S + …\nThere was a gradual decline in coal consumption over the next decade.</div><p class=\"tip\">Nhóm các đường có xu hướng giống nhau vào cùng một đoạn thay vì mô tả từng đường riêng lẻ.</p>",
+        "language": [["rose sharply from X to Y", "tăng mạnh từ X lên Y"], ["peaked at", "đạt đỉnh ở mức"], ["levelled off", "chững lại"], ["a gradual decline in", "sự giảm dần của"]],
+        "quiz": [
+          { "q": "Chọn cụm đúng: “Sales ___ at 500 units in May.”", "options": ["peaked", "peaked at", "were peak", "peaking to"], "answer": 1, "why": "peak at + số liệu." },
+          { "q": "Trạng từ nào chỉ mức thay đổi NHẸ?", "options": ["dramatically", "steadily", "marginally", "sharply"], "answer": 2, "why": "marginally / slightly = thay đổi nhỏ." },
+          { "q": "“There was a ___ increase in prices.”", "options": ["sharply", "sharp", "sharpness", "sharpen"], "answer": 1, "why": "Trước danh từ increase cần tính từ: sharp." }
+        ],
+        "practice": { "task": 1, "prompt": "The line graph below shows the population (millions) of three cities from 1980 to 2020.\n\nCity A: 2 → 4 → 6 → 8 → 9\nCity B: 5 → 5.5 → 5 → 4.5 → 4\nCity C: 1 → 2 → 4 → 7 → 11\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant." }
+      },
+      {
+        "slug": "bar-pie-table-so-sanh",
+        "title": "Bar chart, Pie chart & Table: so sánh và tỉ lệ",
+        "minutes": 15,
+        "theory": "<p>Với biểu đồ <b>không có trục thời gian</b>, trọng tâm là <b>so sánh</b>. Có thời gian thì kết hợp ngôn ngữ xu hướng.</p><h4>Ngôn ngữ so sánh</h4><ul><li><i>X was twice as high as Y.</i></li><li><i>X was considerably higher than Y.</i></li><li><i>X accounted for the largest share (40%), followed by Y (25%).</i></li><li><i>By contrast, only 5% …</i></li></ul><h4>Diễn đạt tỉ lệ (pie chart)</h4><table><tr><th>Số liệu</th><th>Cách viết</th></tr><tr><td>50%</td><td>half</td></tr><tr><td>25%</td><td>a quarter</td></tr><tr><td>33%</td><td>a third</td></tr><tr><td>~70%</td><td>just over two thirds / the majority</td></tr><tr><td>~10%</td><td>one in ten</td></tr></table><h4>Table</h4><p>Bảng có nhiều số — đừng chép hết. Chọn <b>giá trị cao nhất, thấp nhất, thay đổi lớn nhất</b> và nhóm các hàng có điểm chung.</p><p class=\"tip\">Thay đổi cách diễn đạt số liệu (%, phân số, “one in five”) để tránh lặp và tăng điểm Lexical.</p>",
+        "language": [["accounted for", "chiếm"], ["twice as high as", "cao gấp đôi"], ["followed by", "theo sau là"], ["the majority of", "phần lớn"]],
+        "quiz": [
+          { "q": "Cách diễn đạt khác của 25%?", "options": ["a third", "a quarter", "half", "one in three"], "answer": 1, "why": "25% = một phần tư." },
+          { "q": "Với bảng 5 hàng × 5 cột, bạn nên…", "options": ["Mô tả mọi con số", "Chọn số nổi bật và nhóm hàng có điểm chung", "Chỉ viết overview", "Chép lại bảng"], "answer": 1, "why": "Task 1 yêu cầu “select and report the main features”." }
+        ],
+        "practice": { "task": 1, "prompt": "The table below shows the percentage of people using different transport to work in a city in 2005 and 2020.\n\nCar: 55% → 40%\nBus: 25% → 22%\nBicycle: 10% → 25%\nWalking: 10% → 13%\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant." }
+      },
+      {
+        "slug": "process-quy-trinh",
+        "title": "Process: mô tả quy trình",
+        "minutes": 12,
+        "theory": "<p>Dạng Process mô tả các bước sản xuất hoặc chu trình tự nhiên. Không có số liệu nên điểm nằm ở <b>bị động</b> và <b>từ chỉ trình tự</b>.</p><h4>Cấu trúc</h4><ol><li>Mở bài: paraphrase.</li><li>Overview: số bước, điểm bắt đầu – kết thúc, quy trình tuyến tính hay chu trình.</li><li>Thân bài 1: nửa đầu quy trình.</li><li>Thân bài 2: nửa sau.</li></ol><h4>Ngôn ngữ</h4><ul><li>Bị động: <i>The water <b>is collected</b> and then <b>filtered</b>.</i></li><li>Trình tự: <i>First, Next, After that, Once…, Following this, Finally</i>.</li><li>Mệnh đề thời gian: <i>After being cleaned, the bottles are filled.</i></li></ul><div class=\"tpl\">Overall, there are seven stages in the process, beginning with the collection of water from a natural source and ending with its distribution to shops.</div>",
+        "language": [["is collected / is filtered", "được thu gom / được lọc"], ["Once this stage is complete,", "Khi bước này hoàn tất,"], ["the final stage involves", "bước cuối cùng là"]],
+        "quiz": [
+          { "q": "Thì/cấu trúc chính trong bài Process?", "options": ["Quá khứ đơn chủ động", "Hiện tại đơn bị động", "Tương lai", "Hiện tại hoàn thành"], "answer": 1, "why": "Quy trình là sự thật chung, người thực hiện không quan trọng → hiện tại đơn bị động." },
+          { "q": "Hoàn thành: “After ___, the bottles are labelled.”", "options": ["fill", "being filled", "filled them", "to fill"], "answer": 1, "why": "After + being + V3 (bị động dạng V-ing)." }
+        ],
+        "practice": { "task": 1, "prompt": "The diagram below shows the process of producing bottled drinking water.\n\nStages: collect water from source → filtration → purification (UV) → bottling → labelling → packaging → distribution.\n\nSummarise the information by selecting and reporting the main features." }
+      },
+      {
+        "slug": "map-ban-do",
+        "title": "Map: mô tả thay đổi bản đồ",
+        "minutes": 12,
+        "theory": "<p>Dạng Map thường so sánh một địa điểm ở hai thời điểm. Trọng tâm là <b>vị trí</b> và <b>thay đổi</b>.</p><h4>Ngôn ngữ thay đổi (bị động, hiện tại hoàn thành hoặc quá khứ)</h4><ul><li><i>The park <b>was replaced by</b> a shopping centre.</i></li><li><i>A car park <b>has been built</b> to the east of the station.</i></li><li><i>The old factory <b>was demolished</b> / <b>converted into</b> apartments.</i></li><li><i>The road <b>was extended</b> / <b>widened</b>.</i></li></ul><h4>Vị trí</h4><p><i>in the north/south, to the east of, next to, opposite, along the river, in the centre</i>.</p><div class=\"tpl\">Overall, the town centre became far more commercial, with most green spaces giving way to retail and parking facilities.</div><p class=\"tip\">Đi theo một hướng cố định (ví dụ từ bắc xuống nam) để bài mạch lạc.</p>",
+        "language": [["was replaced by", "được thay thế bằng"], ["was converted into", "được chuyển đổi thành"], ["to the east of", "ở phía đông của"], ["gave way to", "nhường chỗ cho"]],
+        "quiz": [
+          { "q": "“The factory ___ into flats.”", "options": ["converted", "was converted", "has convert", "converting"], "answer": 1, "why": "Nhà máy được chuyển đổi → bị động." }
+        ],
+        "practice": { "task": 1, "prompt": "The two maps below show a town centre in 1990 and today.\n\n1990: a park in the centre, small shops on the east, a river to the west.\nToday: the park replaced by a shopping mall, shops became a car park, a footbridge built across the river.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant." }
+      }
+    ]
+  },
+  {
+    "title": "Chương 3 · Writing Task 2",
+    "lessons": [
+      {
+        "slug": "phan-tich-de-va-lap-dan-y",
+        "title": "Phân tích đề & lập dàn ý trong 5 phút",
+        "minutes": 12,
+        "theory": "<p>Task 2 có 40 phút: dành <b>5 phút lập dàn ý</b>, 30 phút viết, 5 phút soát lỗi. Dàn ý tốt quyết định Task Response và Coherence.</p><h4>5 dạng đề Task 2</h4><table><tr><th>Dạng</th><th>Dấu hiệu</th></tr><tr><td>Opinion</td><td>To what extent do you agree or disagree?</td></tr><tr><td>Discussion</td><td>Discuss both views and give your own opinion.</td></tr><tr><td>Advantages / Disadvantages</td><td>Do the advantages outweigh the disadvantages?</td></tr><tr><td>Problem – Solution</td><td>What problems / causes… What solutions…?</td></tr><tr><td>Two-part question</td><td>Hai câu hỏi trực tiếp khác nhau</td></tr></table><h4>Dàn ý mẫu</h4><div class=\"tpl\">Mở bài: paraphrase + quan điểm\nThân 1: Ý chính 1 → giải thích → ví dụ\nThân 2: Ý chính 2 → giải thích → ví dụ\nKết bài: nhắc lại quan điểm</div><p class=\"tip\">Mỗi đoạn thân bài chỉ cần 1 ý chính được phát triển sâu, tốt hơn 3 ý liệt kê sơ sài.</p>",
+        "language": [["This essay will argue that…", "Bài luận này sẽ lập luận rằng…"], ["There are two main reasons for this.", "Có hai lý do chính."]],
+        "quiz": [
+          { "q": "“Discuss both views and give your opinion” thuộc dạng nào?", "options": ["Opinion", "Discussion", "Problem–Solution", "Two-part"], "answer": 1, "why": "Yêu cầu thảo luận hai quan điểm + nêu ý kiến." },
+          { "q": "Nên dành bao lâu để lập dàn ý Task 2?", "options": ["Không cần", "Khoảng 5 phút", "20 phút", "Sau khi viết xong"], "answer": 1, "why": "5 phút lập dàn ý giúp bài mạch lạc và đúng trọng tâm." }
+        ]
+      },
+      {
+        "slug": "dang-opinion",
+        "title": "Dạng Opinion (Agree / Disagree)",
+        "minutes": 15,
+        "theory": "<p>Bạn có thể <b>đồng ý hoàn toàn</b>, <b>phản đối hoàn toàn</b> hoặc <b>đồng ý một phần</b>. Điều quan trọng là quan điểm phải <b>nhất quán</b> từ mở bài đến kết bài.</p><h4>Hai hướng triển khai</h4><ul><li><b>Một phía</b>: 2 đoạn thân đều ủng hộ quan điểm của bạn (an toàn, dễ mạch lạc).</li><li><b>Đồng ý một phần</b>: thân 1 thừa nhận ý ngược lại, thân 2 lý do bạn nghiêng về phía mình.</li></ul><div class=\"tpl\">Mở bài: While some argue that…, I firmly believe that…\nThân 1: The main reason is that…\nThân 2: Furthermore,…\nKết: In conclusion, I strongly agree that…</div>",
+        "language": [["I firmly believe that…", "Tôi tin chắc rằng…"], ["I partly agree with this view.", "Tôi đồng ý một phần."], ["It is undeniable that…", "Không thể phủ nhận rằng…"]],
+        "quiz": [
+          { "q": "Lỗi nghiêm trọng nhất trong bài Opinion là…", "options": ["Dùng “I think”", "Quan điểm mở bài khác kết bài", "Có 2 đoạn thân", "Có ví dụ"], "answer": 1, "why": "Quan điểm không nhất quán làm giảm Task Response." }
+        ],
+        "practice": { "task": 2, "prompt": "Some believe that governments should spend money on public services rather than on the arts, such as music and theatre. To what extent do you agree or disagree?" }
+      },
+      {
+        "slug": "dang-discussion",
+        "title": "Dạng Discussion (Discuss both views)",
+        "minutes": 15,
+        "theory": "<p>Đề yêu cầu <b>thảo luận cả hai quan điểm</b> và <b>nêu ý kiến của bạn</b>. Thiếu ý kiến cá nhân là lỗi rất phổ biến.</p><div class=\"tpl\">Mở bài: People hold different views on whether… While some believe A, others argue B. I side with…\nThân 1: On the one hand, those who support A argue that…\nThân 2: On the other hand, I believe B is more convincing because…\nKết: In conclusion, although…, I believe…</div><p>Đặt ý kiến của bạn ở <b>mở bài, đoạn thân 2 và kết bài</b> để giám khảo thấy rõ.</p><p class=\"tip\">Khi trình bày quan điểm bạn không đồng tình, dùng ngôn ngữ trung lập: <i>Supporters of this view claim…</i>, <i>It is often argued that…</i></p>",
+        "language": [["On the one hand… On the other hand…", "Một mặt… Mặt khác…"], ["Supporters of this view claim that…", "Những người ủng hộ quan điểm này cho rằng…"], ["I side with…", "Tôi đứng về phía…"]],
+        "quiz": [
+          { "q": "Bài Discussion cần có…", "options": ["Chỉ một quan điểm", "Cả hai quan điểm + ý kiến của bạn", "Chỉ ý kiến của bạn", "Không cần kết bài"], "answer": 1, "why": "“Discuss both views and give your own opinion” có 2 yêu cầu." }
+        ],
+        "practice": { "task": 2, "prompt": "Some people think children should start learning a foreign language at primary school, while others believe this should begin at secondary school. Discuss both views and give your own opinion." }
+      },
+      {
+        "slug": "dang-advantages-disadvantages",
+        "title": "Dạng Advantages / Disadvantages",
+        "minutes": 15,
+        "theory": "<p>Có 2 biến thể:</p><ul><li><b>“What are the advantages and disadvantages?”</b> — trình bày cả hai, không bắt buộc nêu ý kiến.</li><li><b>“Do the advantages outweigh the disadvantages?”</b> — <u>bắt buộc</u> nêu bên nào lớn hơn.</li></ul><div class=\"tpl\">Mở bài: …I believe the benefits clearly outweigh the drawbacks.\nThân 1: Lợi ích (1–2 ý phát triển sâu)\nThân 2: Bất lợi + vì sao chúng nhỏ hơn hoặc có thể khắc phục\nKết: nhắc lại đánh giá</div>",
+        "language": [["outweigh", "lớn hơn, vượt trội hơn"], ["a major drawback", "một bất lợi lớn"], ["can be mitigated by", "có thể được giảm nhẹ bằng"]],
+        "quiz": [
+          { "q": "Đề “Do the advantages outweigh the disadvantages?” bắt buộc bạn…", "options": ["Chỉ nêu lợi ích", "Nêu bên nào lớn hơn", "Không nêu ý kiến", "Viết 3 đoạn thân"], "answer": 1, "why": "Câu hỏi yêu cầu so sánh và kết luận rõ ràng." }
+        ],
+        "practice": { "task": 2, "prompt": "Working from home is becoming more common. Do the advantages of this trend outweigh the disadvantages?" }
+      },
+      {
+        "slug": "dang-problem-solution-two-part",
+        "title": "Problem–Solution & Two-part question",
+        "minutes": 15,
+        "theory": "<p>Hai dạng này có điểm chung: <b>trả lời trực tiếp từng câu hỏi</b>, mỗi câu hỏi một đoạn thân.</p><h4>Problem / Cause – Solution</h4><div class=\"tpl\">Thân 1: 1–2 vấn đề/nguyên nhân chính, giải thích hậu quả\nThân 2: giải pháp tương ứng với từng vấn đề ở thân 1</div><p>Giải pháp nên <b>cụ thể</b> và <b>khớp với vấn đề</b>: ai làm, làm gì, vì sao hiệu quả.</p><h4>Two-part question</h4><p>Ví dụ: <i>Why is this happening? Is it a positive or negative development?</i> → thân 1 trả lời câu 1, thân 2 trả lời câu 2.</p><p class=\"tip\">Câu giải pháp chung chung như “the government should do something” không được tính là phát triển ý.</p>",
+        "language": [["One effective solution would be to…", "Một giải pháp hiệu quả là…"], ["This could be addressed by…", "Vấn đề này có thể được giải quyết bằng…"], ["The root cause of this problem is…", "Nguyên nhân gốc rễ là…"]],
+        "quiz": [
+          { "q": "Giải pháp nào được phát triển tốt nhất?", "options": ["The government should solve it.", "People must change.", "Cities could introduce congestion charges, which would discourage unnecessary car journeys.", "It is a big problem."], "answer": 2, "why": "Nêu rõ ai làm, làm gì và tác dụng." }
+        ],
+        "practice": { "task": 2, "prompt": "Many young people today spend too much time on social media. What are the causes, and what effects does this have on society?" }
+      }
+    ]
+  },
+  {
+    "title": "Chương 4 · Hoàn thiện bài viết",
+    "lessons": [
+      {
+        "slug": "tu-vung-hoc-thuat-tranh-lap",
+        "title": "Từ vựng học thuật & tránh lặp từ",
+        "minutes": 12,
+        "theory": "<p>Lexical Resource đánh giá <b>độ đa dạng</b> và <b>độ chính xác</b>. Dùng từ “khó” sai ngữ cảnh còn mất điểm hơn dùng từ đơn giản đúng.</p><h4>3 cách nâng từ vựng</h4><ol><li><b>Collocation</b> thay vì từ đơn: <i>make a decision, pose a threat, raise awareness</i>.</li><li><b>Đồng nghĩa có kiểm soát</b>: <i>problem → issue / challenge / concern</i>.</li><li><b>Danh từ hoá</b>: <i>people are increasingly using phones → the increasing use of phones</i>.</li></ol><table><tr><th>Từ hay lặp</th><th>Thay bằng</th></tr><tr><td>good</td><td>beneficial, advantageous, positive</td></tr><tr><td>bad</td><td>harmful, detrimental, negative</td></tr><tr><td>very important</td><td>crucial, vital, essential</td></tr><tr><td>a lot of</td><td>a large number of (đếm được), a great deal of (không đếm được)</td></tr></table>",
+        "language": [["pose a threat to", "gây mối đe doạ cho"], ["raise awareness of", "nâng cao nhận thức về"], ["have a detrimental effect on", "có ảnh hưởng tiêu cực đến"]],
+        "quiz": [
+          { "q": "Chọn collocation đúng:", "options": ["do a decision", "make a decision", "take a decision on make", "create a decision"], "answer": 1, "why": "make a decision là collocation chuẩn." },
+          { "q": "“a great deal of” đi với…", "options": ["danh từ đếm được số nhiều", "danh từ không đếm được", "động từ", "tính từ"], "answer": 1, "why": "a great deal of money/time/information." }
+        ]
+      },
+      {
+        "slug": "loi-ngu-phap-thuong-gap",
+        "title": "10 lỗi ngữ pháp hay gặp & cách tự sửa",
+        "minutes": 15,
+        "theory": "<p>Dành 5 phút cuối để soát bài theo danh sách dưới đây — đây là những lỗi giám khảo gặp nhiều nhất ở bài band 5–6.</p><table><tr><th>Lỗi</th><th>Sai</th><th>Đúng</th></tr><tr><td>Hoà hợp chủ–vị</td><td>The number of cars are rising.</td><td>The number of cars is rising.</td></tr><tr><td>Mạo từ</td><td>Internet is useful.</td><td>The internet is useful.</td></tr><tr><td>Danh từ không đếm được</td><td>many informations</td><td>much information</td></tr><tr><td>Although + but</td><td>Although…, but…</td><td>Although…, …</td></tr><tr><td>Câu thiếu động từ</td><td>Because people busy.</td><td>Because people are busy, …</td></tr><tr><td>Dấu phẩy nối câu</td><td>It is cheap, it is fast.</td><td>It is cheap, and it is fast.</td></tr><tr><td>people(s)</td><td>peoples think</td><td>people think</td></tr><tr><td>Giới từ</td><td>discuss about</td><td>discuss</td></tr><tr><td>Thì Task 1</td><td>In 2000, sales increase.</td><td>In 2000, sales increased.</td></tr><tr><td>Từ loại</td><td>an economy growth</td><td>economic growth</td></tr></table><p class=\"tip\">Sau khi viết ở mục Luyện tập, dùng nút chấm để hệ thống gạch lỗi; ghi các lỗi lặp lại vào sổ riêng.</p>",
+        "language": [["The number of + N (số nhiều) + is", "Số lượng… (chia số ít)"], ["much information / advice / equipment", "danh từ không đếm được"]],
+        "quiz": [
+          { "q": "Câu nào đúng?", "options": ["The number of students are increasing.", "The number of students is increasing.", "A number of students is increasing.", "Number of student increase."], "answer": 1, "why": "“The number of” làm chủ ngữ số ít." },
+          { "q": "Câu nào đúng?", "options": ["We discussed about the plan.", "We discussed the plan.", "We discussed on the plan.", "We discuss about plan."], "answer": 1, "why": "discuss là ngoại động từ, không cần giới từ." }
+        ],
+        "practice": { "task": 2, "prompt": "Many people believe that protecting the environment is the responsibility of governments, not individuals. To what extent do you agree or disagree?" }
+      }
+    ]
+  }
+]
